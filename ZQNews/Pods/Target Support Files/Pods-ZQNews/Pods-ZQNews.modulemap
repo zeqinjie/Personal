@@ -1,0 +1,6 @@
+framework module Pods_ZQNews {
+  umbrella header "Pods-ZQNews-umbrella.h"
+
+  export *
+  module * { export * }
+}
