@@ -70,6 +70,13 @@
 		15C3C816214D0588004BBA38 /* ZQUserDefaultMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3C811214D0588004BBA38 /* ZQUserDefaultMacros.swift */; };
 		15C3C81B214D2B42004BBA38 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3C81A214D2B42004BBA38 /* MainTabBarViewController.swift */; };
 		15C3C820214D3004004BBA38 /* HomeModules.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C3C81F214D3004004BBA38 /* HomeModules.storyboard */; };
+		15C502FA2150F510004FC817 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C502F92150F510004FC817 /* BaseViewController.swift */; };
+		15C502FC2150F519004FC817 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C502FB2150F519004FC817 /* HomeViewController.swift */; };
+		15C503002150F54A004FC817 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C502FF2150F54A004FC817 /* NewsViewController.swift */; };
+		15C503042150FE80004FC817 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C503032150FE80004FC817 /* MineViewController.swift */; };
+		15C503082150FEA4004FC817 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C503072150FEA4004FC817 /* SettingViewController.swift */; };
+		15C5030B2150FED2004FC817 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C5030A2150FED2004FC817 /* BaseModel.swift */; };
+		15C5030D2151040E004FC817 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C5030C2151040E004FC817 /* BaseNavigationViewController.swift */; };
 		3F5572A9F67AF438987D5482 /* Pods_ZQNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DCFBF84A794971D025C8A7 /* Pods_ZQNews.framework */; };
 /* End PBXBuildFile section */
 
@@ -139,6 +146,13 @@
 		15C3C811214D0588004BBA38 /* ZQUserDefaultMacros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZQUserDefaultMacros.swift; sourceTree = "<group>"; };
 		15C3C81A214D2B42004BBA38 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		15C3C81F214D3004004BBA38 /* HomeModules.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeModules.storyboard; sourceTree = "<group>"; };
+		15C502F92150F510004FC817 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		15C502FB2150F519004FC817 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		15C502FF2150F54A004FC817 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		15C503032150FE80004FC817 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		15C503072150FEA4004FC817 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		15C5030A2150FED2004FC817 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		15C5030C2151040E004FC817 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
 		5660BEAF912FA16076CC493D /* Pods-ZQNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZQNews/Pods-ZQNews.release.xcconfig"; sourceTree = "<group>"; };
 		9AD71F520DDBF5D66836608B /* Pods-ZQNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZQNews/Pods-ZQNews.debug.xcconfig"; sourceTree = "<group>"; };
 		B9DCFBF84A794971D025C8A7 /* Pods_ZQNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZQNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,7 +191,7 @@
 		15816CF021480A920081290F /* ZQNews */ = {
 			isa = PBXGroup;
 			children = (
-				15C3C778214D0106004BBA38 /* Base */,
+				15C502F62150F4B2004FC817 /* Base */,
 				15C3C77B214D0156004BBA38 /* Tool */,
 				15C3C77A214D013F004BBA38 /* Define */,
 				15C3C794214D0332004BBA38 /* Util */,
@@ -190,13 +204,6 @@
 				15816CFD21480A940081290F /* Info.plist */,
 			);
 			path = ZQNews;
-			sourceTree = "<group>";
-		};
-		15C3C778214D0106004BBA38 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		15C3C779214D0115004BBA38 /* Vendor */ = {
@@ -231,112 +238,12 @@
 			isa = PBXGroup;
 			children = (
 				15C3C817214D2AFF004BBA38 /* MainModules */,
-				15C3C77D214D01DB004BBA38 /* HomeModules */,
-				15C3C78C214D0287004BBA38 /* NewsModules */,
-				15C3C782214D0249004BBA38 /* MineModules */,
+				15C503012150F55C004FC817 /* MineModules */,
+				15C502FD2150F534004FC817 /* NewsModules */,
+				15C502F42150F498004FC817 /* HomeModules */,
+				15C503052150FE95004FC817 /* SettingModules */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		15C3C77D214D01DB004BBA38 /* HomeModules */ = {
-			isa = PBXGroup;
-			children = (
-				15C3C787214D025F004BBA38 /* Home */,
-			);
-			path = HomeModules;
-			sourceTree = "<group>";
-		};
-		15C3C782214D0249004BBA38 /* MineModules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MineModules;
-			sourceTree = "<group>";
-		};
-		15C3C787214D025F004BBA38 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				15C3C788214D025F004BBA38 /* ViewModel */,
-				15C3C789214D025F004BBA38 /* Controller */,
-				15C3C78A214D025F004BBA38 /* Model */,
-				15C3C78B214D025F004BBA38 /* View */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		15C3C788214D025F004BBA38 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		15C3C789214D025F004BBA38 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		15C3C78A214D025F004BBA38 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		15C3C78B214D025F004BBA38 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		15C3C78C214D0287004BBA38 /* NewsModules */ = {
-			isa = PBXGroup;
-			children = (
-				15C3C78D214D0287004BBA38 /* Home */,
-			);
-			path = NewsModules;
-			sourceTree = "<group>";
-		};
-		15C3C78D214D0287004BBA38 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				15C3C78E214D0287004BBA38 /* ViewModel */,
-				15C3C78F214D0287004BBA38 /* Controller */,
-				15C3C790214D0287004BBA38 /* Model */,
-				15C3C791214D0287004BBA38 /* View */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		15C3C78E214D0287004BBA38 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		15C3C78F214D0287004BBA38 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		15C3C790214D0287004BBA38 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		15C3C791214D0287004BBA38 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		15C3C792214D02CB004BBA38 /* Storyboard */ = {
@@ -436,6 +343,96 @@
 				15C3C81F214D3004004BBA38 /* HomeModules.storyboard */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		15C502F42150F498004FC817 /* HomeModules */ = {
+			isa = PBXGroup;
+			children = (
+				15C502F52150F498004FC817 /* Home */,
+			);
+			path = HomeModules;
+			sourceTree = "<group>";
+		};
+		15C502F52150F498004FC817 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				15C502FB2150F519004FC817 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		15C502F62150F4B2004FC817 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				15C503092150FEC2004FC817 /* BaseModel */,
+				15C502F82150F4B5004FC817 /* BaseVC */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		15C502F82150F4B5004FC817 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				15C502F92150F510004FC817 /* BaseViewController.swift */,
+				15C5030C2151040E004FC817 /* BaseNavigationViewController.swift */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		15C502FD2150F534004FC817 /* NewsModules */ = {
+			isa = PBXGroup;
+			children = (
+				15C502FE2150F534004FC817 /* News */,
+			);
+			path = NewsModules;
+			sourceTree = "<group>";
+		};
+		15C502FE2150F534004FC817 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				15C502FF2150F54A004FC817 /* NewsViewController.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		15C503012150F55C004FC817 /* MineModules */ = {
+			isa = PBXGroup;
+			children = (
+				15C503022150F55C004FC817 /* Mine */,
+			);
+			path = MineModules;
+			sourceTree = "<group>";
+		};
+		15C503022150F55C004FC817 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				15C503032150FE80004FC817 /* MineViewController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		15C503052150FE95004FC817 /* SettingModules */ = {
+			isa = PBXGroup;
+			children = (
+				15C503062150FE95004FC817 /* Setting */,
+			);
+			path = SettingModules;
+			sourceTree = "<group>";
+		};
+		15C503062150FE95004FC817 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				15C503072150FEA4004FC817 /* SettingViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		15C503092150FEC2004FC817 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				15C5030A2150FED2004FC817 /* BaseModel.swift */,
+			);
+			path = BaseModel;
 			sourceTree = "<group>";
 		};
 		3075644AEA6991B1D70B7836 /* Frameworks */ = {
@@ -583,6 +580,7 @@
 				15C3C800214D03A3004BBA38 /* UIFontExtensions.swift in Sources */,
 				15C3C7DF214D03A3004BBA38 /* TimePassed.swift in Sources */,
 				15C3C7FB214D03A3004BBA38 /* UIImageViewExtensions.swift in Sources */,
+				15C502FA2150F510004FC817 /* BaseViewController.swift in Sources */,
 				15C3C7ED214D03A3004BBA38 /* CharacterExtensions.swift in Sources */,
 				15C3C813214D0588004BBA38 /* ZQCommonHeader.swift in Sources */,
 				15C3C7D1214D03A3004BBA38 /* BlockPan.swift in Sources */,
@@ -596,17 +594,21 @@
 				15C3C7E1214D03A3004BBA38 /* UIColoredView.swift in Sources */,
 				15C3C7F3214D03A3004BBA38 /* BlockLongPress.swift in Sources */,
 				15C3C7FA214D03A3004BBA38 /* UIApplicationExtensions.swift in Sources */,
+				15C503082150FEA4004FC817 /* SettingViewController.swift in Sources */,
 				15C3C812214D0588004BBA38 /* ZQColor.swift in Sources */,
 				15C3C7E8214D03A3004BBA38 /* FileManagerExtension.swift in Sources */,
 				15C3C7E9214D03A3004BBA38 /* CollectionsExtension.swift in Sources */,
+				15C502FC2150F519004FC817 /* HomeViewController.swift in Sources */,
 				15C3C7DB214D03A3004BBA38 /* UIBarButtonItemExtensions.swift in Sources */,
 				15C3C815214D0588004BBA38 /* ZQNotificationMacros.swift in Sources */,
 				15C3C7CF214D03A3004BBA38 /* CGRectExtensions.swift in Sources */,
 				15C3C7DA214D03A3004BBA38 /* BlockPinch.swift in Sources */,
 				15C3C7FD214D03A3004BBA38 /* UIDeviceExtensions.swift in Sources */,
+				15C5030B2150FED2004FC817 /* BaseModel.swift in Sources */,
 				15C3C801214D03A3004BBA38 /* UIColorExtensions.swift in Sources */,
 				15C3C7F2214D03A3004BBA38 /* UIWindowExtensions.swift in Sources */,
 				15C3C7FF214D03A3004BBA38 /* UIAlertControllerExtensions.swift in Sources */,
+				15C5030D2151040E004FC817 /* BaseNavigationViewController.swift in Sources */,
 				15C3C7EF214D03A3004BBA38 /* FloatingPointExtensions.swift in Sources */,
 				15C3C7D0214D03A3004BBA38 /* CGFloatExtensions.swift in Sources */,
 				15C3C7F4214D03A3004BBA38 /* DateExtensions.swift in Sources */,
@@ -614,6 +616,7 @@
 				15C3C7F5214D03A3004BBA38 /* UILabelExtensions.swift in Sources */,
 				15C3C7E3214D03A3004BBA38 /* EZSwiftFunctions.swift in Sources */,
 				15C3C816214D0588004BBA38 /* ZQUserDefaultMacros.swift in Sources */,
+				15C503042150FE80004FC817 /* MineViewController.swift in Sources */,
 				15C3C7F9214D03A3004BBA38 /* UserDefaultsExtension.swift in Sources */,
 				15C3C814214D0588004BBA38 /* APURL.swift in Sources */,
 				15C3C7D3214D03A3004BBA38 /* UITextFieldExtensions.swift in Sources */,
@@ -637,6 +640,7 @@
 				15C3C7EA214D03A3004BBA38 /* UIImageExtensions.swift in Sources */,
 				15C3C7D8214D03A3004BBA38 /* UITextViewExtensions.swift in Sources */,
 				15C3C7DD214D03A3004BBA38 /* StringExtensions.swift in Sources */,
+				15C503002150F54A004FC817 /* NewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
