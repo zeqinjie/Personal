@@ -392,11 +392,10 @@ open class RAMAnimatedTabBarController: UITabBarController {
 
     fileprivate func createViewContainers() -> [String: UIView] {
         
-        guard let items = tabBar.items else {
+        guard let items = tabBar.items, items.count > 0 else {
             return [:]
         }
 
-        
         var containersDict: [String: UIView] = [:]
         
         for index in 0 ..< items.count {

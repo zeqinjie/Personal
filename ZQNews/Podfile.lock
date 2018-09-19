@@ -1,15 +1,26 @@
 PODS:
   - Alamofire (4.7.3)
-  - Kingfisher (4.8.0)
-  - RAMAnimatedTabBarController (3.4.0)
-  - SnapKit (4.0.0)
+  - Kingfisher (4.9.0)
+  - Moya (11.0.2):
+    - Moya/Core (= 11.0.2)
+  - Moya/Core (11.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - RAMAnimatedTabBarController (3.5.0)
+  - Result (3.2.4)
+  - RxCocoa (4.3.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.3.0)
+  - SnapKit (4.0.1)
   - Spring (1.0.5)
   - SwiftyJSON (4.1.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.7)
   - Kingfisher
+  - Moya (~> 11.0)
   - RAMAnimatedTabBarController
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
   - SnapKit (~> 4.0.0)
   - Spring
   - SwiftyJSON (~> 4.0)
@@ -18,19 +29,27 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - Kingfisher
+    - Moya
     - RAMAnimatedTabBarController
+    - Result
+    - RxCocoa
+    - RxSwift
     - SnapKit
     - Spring
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
-  RAMAnimatedTabBarController: 6032bb4ff8a76c3a3d455b672ad696439283a59b
-  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  Kingfisher: 64539b51826b778206daa6ed815d12653caa69dd
+  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  RAMAnimatedTabBarController: 7e259e89b669c7bc833a6441c7d8fbfd6580f473
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxCocoa: 71b9cce833fbcb89a8eec11816dd225830c2bd3c
+  RxSwift: a9717a34df3179fe63563f76e046ad345078dd3a
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   Spring: 17901566c8ecf3a1327902b940406c64512f9bb1
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: d1a7fa8902867c764ba85ddf9f0b89f2b0686722
+PODFILE CHECKSUM: 8daf0374171106c9d404dacf018aba5744344be1
 
 COCOAPODS: 1.5.3
