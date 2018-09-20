@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		15816CF221480A920081290F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15816CF121480A920081290F /* AppDelegate.swift */; };
-		15816CF721480A920081290F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15816CF521480A920081290F /* Main.storyboard */; };
+		15816CF721480A920081290F /* MainModules.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15816CF521480A920081290F /* MainModules.storyboard */; };
 		15816CF921480A940081290F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15816CF821480A940081290F /* Assets.xcassets */; };
 		15816CFC21480A940081290F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15816CFA21480A940081290F /* LaunchScreen.storyboard */; };
+		15A63AD62153AAE400282232 /* ZQTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A63AD52153AAE400282232 /* ZQTool.swift */; };
+		15A63AD82153AAF300282232 /* ZQNetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A63AD72153AAF300282232 /* ZQNetWorkTool.swift */; };
 		15C3C7CF214D03A3004BBA38 /* CGRectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3C79B214D03A2004BBA38 /* CGRectExtensions.swift */; };
 		15C3C7D0214D03A3004BBA38 /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3C79C214D03A2004BBA38 /* CGFloatExtensions.swift */; };
 		15C3C7D1214D03A3004BBA38 /* BlockPan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3C79D214D03A2004BBA38 /* BlockPan.swift */; };
@@ -83,10 +85,12 @@
 /* Begin PBXFileReference section */
 		15816CEE21480A920081290F /* ZQNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZQNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15816CF121480A920081290F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		15816CF621480A920081290F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15816CF621480A920081290F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainModules.storyboard; sourceTree = "<group>"; };
 		15816CF821480A940081290F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15816CFB21480A940081290F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15816CFD21480A940081290F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15A63AD52153AAE400282232 /* ZQTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQTool.swift; sourceTree = "<group>"; };
+		15A63AD72153AAF300282232 /* ZQNetWorkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQNetWorkTool.swift; sourceTree = "<group>"; };
 		15C3C79B214D03A2004BBA38 /* CGRectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtensions.swift; sourceTree = "<group>"; };
 		15C3C79C214D03A2004BBA38 /* CGFloatExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatExtensions.swift; sourceTree = "<group>"; };
 		15C3C79D214D03A2004BBA38 /* BlockPan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockPan.swift; sourceTree = "<group>"; };
@@ -192,9 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				15C502F62150F4B2004FC817 /* Base */,
-				15C3C77B214D0156004BBA38 /* Tool */,
+				15A63AD42153AAD000282232 /* Tool */,
 				15C3C77A214D013F004BBA38 /* Define */,
-				15C3C794214D0332004BBA38 /* Util */,
 				15C3C779214D0115004BBA38 /* Vendor */,
 				15C3C77C214D018E004BBA38 /* Modules */,
 				15C3C792214D02CB004BBA38 /* Storyboard */,
@@ -204,6 +207,15 @@
 				15816CFD21480A940081290F /* Info.plist */,
 			);
 			path = ZQNews;
+			sourceTree = "<group>";
+		};
+		15A63AD42153AAD000282232 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				15A63AD52153AAE400282232 /* ZQTool.swift */,
+				15A63AD72153AAF300282232 /* ZQNetWorkTool.swift */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		15C3C779214D0115004BBA38 /* Vendor */ = {
@@ -226,21 +238,13 @@
 			path = Define;
 			sourceTree = "<group>";
 		};
-		15C3C77B214D0156004BBA38 /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Tool;
-			path = Header;
-			sourceTree = "<group>";
-		};
 		15C3C77C214D018E004BBA38 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				15C3C817214D2AFF004BBA38 /* MainModules */,
+				15C502F42150F498004FC817 /* HomeModules */,
 				15C503012150F55C004FC817 /* MineModules */,
 				15C502FD2150F534004FC817 /* NewsModules */,
-				15C502F42150F498004FC817 /* HomeModules */,
 				15C503052150FE95004FC817 /* SettingModules */,
 			);
 			path = Modules;
@@ -258,16 +262,9 @@
 		15C3C793214D02E2004BBA38 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				15816CF521480A920081290F /* Main.storyboard */,
+				15816CF521480A920081290F /* MainModules.storyboard */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		15C3C794214D0332004BBA38 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Util;
 			sourceTree = "<group>";
 		};
 		15C3C79A214D03A2004BBA38 /* EZSwiftExtensions */ = {
@@ -514,7 +511,7 @@
 			files = (
 				15816CFC21480A940081290F /* LaunchScreen.storyboard in Resources */,
 				15816CF921480A940081290F /* Assets.xcassets in Resources */,
-				15816CF721480A920081290F /* Main.storyboard in Resources */,
+				15816CF721480A920081290F /* MainModules.storyboard in Resources */,
 				15C3C820214D3004004BBA38 /* HomeModules.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,6 +529,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -545,6 +543,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -603,6 +602,7 @@
 				15C3C7F3214D03A3004BBA38 /* BlockLongPress.swift in Sources */,
 				15C3C7FA214D03A3004BBA38 /* UIApplicationExtensions.swift in Sources */,
 				15C503082150FEA4004FC817 /* SettingViewController.swift in Sources */,
+				15A63AD62153AAE400282232 /* ZQTool.swift in Sources */,
 				15C3C812214D0588004BBA38 /* ZQColor.swift in Sources */,
 				15C3C7E8214D03A3004BBA38 /* FileManagerExtension.swift in Sources */,
 				15C3C7E9214D03A3004BBA38 /* CollectionsExtension.swift in Sources */,
@@ -643,6 +643,7 @@
 				15816CF221480A920081290F /* AppDelegate.swift in Sources */,
 				15C3C7EB214D03A3004BBA38 /* UIViewExtensions.swift in Sources */,
 				15C3C7F0214D03A3004BBA38 /* NSDictionaryExtensions.swift in Sources */,
+				15A63AD82153AAF300282232 /* ZQNetWorkTool.swift in Sources */,
 				15C3C7EC214D03A3004BBA38 /* BundleExtensions.swift in Sources */,
 				15C3C7E5214D03A3004BBA38 /* UISliderExtensions.swift in Sources */,
 				15C3C7EA214D03A3004BBA38 /* UIImageExtensions.swift in Sources */,
@@ -655,12 +656,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		15816CF521480A920081290F /* Main.storyboard */ = {
+		15816CF521480A920081290F /* MainModules.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				15816CF621480A920081290F /* Base */,
 			);
-			name = Main.storyboard;
+			name = MainModules.storyboard;
 			sourceTree = "<group>";
 		};
 		15816CFA21480A940081290F /* LaunchScreen.storyboard */ = {

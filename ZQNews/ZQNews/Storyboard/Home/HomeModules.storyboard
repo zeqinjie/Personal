@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="KFM-de-ERd"/>
+                        <viewLayoutGuide key="safeArea" id="Q4I-LQ-gX6"/>
                     </view>
                     <navigationItem key="navigationItem" id="qBy-2T-xSE"/>
                 </viewController>
@@ -26,11 +26,10 @@
             </objects>
             <point key="canvasLocation" x="52" y="9"/>
         </scene>
-        <!--首页-->
+        <!--Base Navigation View Controller-->
         <scene sceneID="9b7-UL-YQd">
             <objects>
                 <navigationController storyboardIdentifier="HomeBaseNav" id="FSS-uG-bdv" customClass="BaseNavigationViewController" customModule="ZQNews" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" image="home" selectedImage="home_sel" id="ArI-VG-X7N" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="15m-ba-ZfS">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -45,8 +44,4 @@
             <point key="canvasLocation" x="-722" y="9"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="home" width="28" height="28"/>
-        <image name="home_sel" width="28" height="28"/>
-    </resources>
 </document>
