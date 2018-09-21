@@ -11,7 +11,7 @@ import LTScrollView
 class ZQHomeViewController: BaseViewController {
 
     fileprivate var pageManager:LTSimpleManager?
-//    fileprivate var listVCS = [NewsListContentViewController]()
+    fileprivate var listVCS = [ZQEpisodeListViewController]()
     //MARK: - LifeCycle
     
     override func viewDidLoad() {
@@ -39,6 +39,9 @@ class ZQHomeViewController: BaseViewController {
 // MARK: - UI
 extension ZQHomeViewController {
     func creatUI()  {
+        for _ in 0 ... 3 {
+            listVCS.append(ZQEpisodeListViewController())
+        }
         
     }
     
