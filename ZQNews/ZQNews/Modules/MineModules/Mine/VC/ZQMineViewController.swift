@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MineViewController: BaseViewController {
+class ZQMineViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

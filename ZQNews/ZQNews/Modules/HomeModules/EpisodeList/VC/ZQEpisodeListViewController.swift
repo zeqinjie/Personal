@@ -1,14 +1,14 @@
 //
-//  SettingViewController.swift
+//  EpisodeListViewController.swift
 //  ZQNews
 //
-//  Created by zhengzeqin on 2018/9/18.
+//  Created by zhengzeqin on 2018/9/21.
 //  Copyright © 2018年 zhengzeqin. All rights reserved.
 //
 
 import UIKit
 
-class SettingViewController: BaseViewController {
+class ZQEpisodeListViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

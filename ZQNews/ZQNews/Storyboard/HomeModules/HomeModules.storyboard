@@ -13,7 +13,7 @@
         <!--Home View Controller-->
         <scene sceneID="WKu-NL-RUd">
             <objects>
-                <viewController id="zWc-Vm-fGO" customClass="HomeViewController" customModule="ZQNews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zWc-Vm-fGO" customClass="ZQHomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="spI-oi-uYI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

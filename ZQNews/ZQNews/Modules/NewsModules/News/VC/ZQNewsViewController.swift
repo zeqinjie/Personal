@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  NewsViewController.swift
 //  ZQNews
 //
 //  Created by zhengzeqin on 2018/9/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: BaseViewController {
+class ZQNewsViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

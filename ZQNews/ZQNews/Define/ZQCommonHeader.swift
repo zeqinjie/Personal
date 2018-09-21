@@ -98,7 +98,7 @@ var ZQIPhoneXBottomHeigth : CGFloat  {
 /// 打印日志
 ///
 /// - Parameter str: 内容
-func DLog(str: String) {
+func DLog(_ str: String) {
     #if DEBUG
     print("file: \(#file), line:\(#line),\(str)")
     #endif

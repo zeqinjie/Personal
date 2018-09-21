@@ -12,7 +12,7 @@
         <!--Main Tab Bar View Controller-->
         <scene sceneID="2lK-Wl-rUk">
             <objects>
-                <tabBarController storyboardIdentifier="MainTabBarViewController" automaticallyAdjustsScrollViewInsets="NO" id="4I3-oN-aBD" customClass="MainTabBarViewController" customModule="ZQNews" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarViewController" automaticallyAdjustsScrollViewInsets="NO" id="4I3-oN-aBD" customClass="ZQMainTabBarViewController" customModule="ZQNews" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SLl-4H-QXa">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

@@ -15,5 +15,6 @@ target 'ZQNews' do
   pod 'ObjectMapper'
   pod 'Spring'
   pod 'RAMAnimatedTabBarController'
-
+  pod 'LTScrollView', '~> 0.2.0'
+  
 end

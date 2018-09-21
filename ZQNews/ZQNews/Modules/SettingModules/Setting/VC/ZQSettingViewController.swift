@@ -1,5 +1,5 @@
 //
-//  NewsViewController.swift
+//  SettingViewController.swift
 //  ZQNews
 //
 //  Created by zhengzeqin on 2018/9/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewsViewController: BaseViewController {
+class ZQSettingViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

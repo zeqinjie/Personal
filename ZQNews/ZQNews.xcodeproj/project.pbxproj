@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1543DD922154F73A00B5558F /* ZQEpisodeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1543DD912154F73A00B5558F /* ZQEpisodeListViewController.swift */; };
+		1543DDAA2154F8A300B5558F /* ZQUIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1543DDA92154F8A300B5558F /* ZQUIViewControllerExtensions.swift */; };
 		15816CF221480A920081290F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15816CF121480A920081290F /* AppDelegate.swift */; };
 		15816CF721480A920081290F /* MainModules.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15816CF521480A920081290F /* MainModules.storyboard */; };
 		15816CF921480A940081290F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15816CF821480A940081290F /* Assets.xcassets */; };
@@ -67,22 +69,25 @@
 		15C3C802214D03A3004BBA38 /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3C7CE214D03A3004BBA38 /* UIEdgeInsets.swift */; };
 		15C3C812214D0588004BBA38 /* ZQColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3C80D214D0588004BBA38 /* ZQColor.swift */; };
 		15C3C813214D0588004BBA38 /* ZQCommonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3C80E214D0588004BBA38 /* ZQCommonHeader.swift */; };
-		15C3C814214D0588004BBA38 /* APURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3C80F214D0588004BBA38 /* APURL.swift */; };
+		15C3C814214D0588004BBA38 /* ZQAPURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3C80F214D0588004BBA38 /* ZQAPURL.swift */; };
 		15C3C815214D0588004BBA38 /* ZQNotificationMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3C810214D0588004BBA38 /* ZQNotificationMacros.swift */; };
 		15C3C816214D0588004BBA38 /* ZQUserDefaultMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3C811214D0588004BBA38 /* ZQUserDefaultMacros.swift */; };
-		15C3C81B214D2B42004BBA38 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3C81A214D2B42004BBA38 /* MainTabBarViewController.swift */; };
+		15C3C81B214D2B42004BBA38 /* ZQMainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3C81A214D2B42004BBA38 /* ZQMainTabBarViewController.swift */; };
 		15C3C820214D3004004BBA38 /* HomeModules.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C3C81F214D3004004BBA38 /* HomeModules.storyboard */; };
 		15C502FA2150F510004FC817 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C502F92150F510004FC817 /* BaseViewController.swift */; };
-		15C502FC2150F519004FC817 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C502FB2150F519004FC817 /* HomeViewController.swift */; };
-		15C503002150F54A004FC817 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C502FF2150F54A004FC817 /* NewsViewController.swift */; };
-		15C503042150FE80004FC817 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C503032150FE80004FC817 /* MineViewController.swift */; };
-		15C503082150FEA4004FC817 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C503072150FEA4004FC817 /* SettingViewController.swift */; };
+		15C502FC2150F519004FC817 /* ZQHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C502FB2150F519004FC817 /* ZQHomeViewController.swift */; };
+		15C503002150F54A004FC817 /* ZQNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C502FF2150F54A004FC817 /* ZQNewsViewController.swift */; };
+		15C503042150FE80004FC817 /* ZQMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C503032150FE80004FC817 /* ZQMineViewController.swift */; };
+		15C503082150FEA4004FC817 /* ZQSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C503072150FEA4004FC817 /* ZQSettingViewController.swift */; };
 		15C5030B2150FED2004FC817 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C5030A2150FED2004FC817 /* BaseModel.swift */; };
 		15C5030D2151040E004FC817 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C5030C2151040E004FC817 /* BaseNavigationViewController.swift */; };
+		15FFA0772154E3F8006036C4 /* ZQApiMainHttpTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FFA0762154E3F8006036C4 /* ZQApiMainHttpTarget.swift */; };
 		3F5572A9F67AF438987D5482 /* Pods_ZQNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DCFBF84A794971D025C8A7 /* Pods_ZQNews.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1543DD912154F73A00B5558F /* ZQEpisodeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQEpisodeListViewController.swift; sourceTree = "<group>"; };
+		1543DDA92154F8A300B5558F /* ZQUIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQUIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		15816CEE21480A920081290F /* ZQNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZQNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15816CF121480A920081290F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15816CF621480A920081290F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainModules.storyboard; sourceTree = "<group>"; };
@@ -145,18 +150,19 @@
 		15C3C7CE214D03A3004BBA38 /* UIEdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; };
 		15C3C80D214D0588004BBA38 /* ZQColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZQColor.swift; sourceTree = "<group>"; };
 		15C3C80E214D0588004BBA38 /* ZQCommonHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZQCommonHeader.swift; sourceTree = "<group>"; };
-		15C3C80F214D0588004BBA38 /* APURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APURL.swift; sourceTree = "<group>"; };
+		15C3C80F214D0588004BBA38 /* ZQAPURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZQAPURL.swift; sourceTree = "<group>"; };
 		15C3C810214D0588004BBA38 /* ZQNotificationMacros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZQNotificationMacros.swift; sourceTree = "<group>"; };
 		15C3C811214D0588004BBA38 /* ZQUserDefaultMacros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZQUserDefaultMacros.swift; sourceTree = "<group>"; };
-		15C3C81A214D2B42004BBA38 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		15C3C81A214D2B42004BBA38 /* ZQMainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQMainTabBarViewController.swift; sourceTree = "<group>"; };
 		15C3C81F214D3004004BBA38 /* HomeModules.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeModules.storyboard; sourceTree = "<group>"; };
 		15C502F92150F510004FC817 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		15C502FB2150F519004FC817 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		15C502FF2150F54A004FC817 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
-		15C503032150FE80004FC817 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
-		15C503072150FEA4004FC817 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		15C502FB2150F519004FC817 /* ZQHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQHomeViewController.swift; sourceTree = "<group>"; };
+		15C502FF2150F54A004FC817 /* ZQNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQNewsViewController.swift; sourceTree = "<group>"; };
+		15C503032150FE80004FC817 /* ZQMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQMineViewController.swift; sourceTree = "<group>"; };
+		15C503072150FEA4004FC817 /* ZQSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQSettingViewController.swift; sourceTree = "<group>"; };
 		15C5030A2150FED2004FC817 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		15C5030C2151040E004FC817 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		15FFA0762154E3F8006036C4 /* ZQApiMainHttpTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQApiMainHttpTarget.swift; sourceTree = "<group>"; };
 		5660BEAF912FA16076CC493D /* Pods-ZQNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZQNews/Pods-ZQNews.release.xcconfig"; sourceTree = "<group>"; };
 		9AD71F520DDBF5D66836608B /* Pods-ZQNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZQNews/Pods-ZQNews.debug.xcconfig"; sourceTree = "<group>"; };
 		B9DCFBF84A794971D025C8A7 /* Pods_ZQNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZQNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +180,199 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1543DD8D2154F2E800B5558F /* MineModules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MineModules;
+			sourceTree = "<group>";
+		};
+		1543DD8E2154F2EF00B5558F /* NewsModules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewsModules;
+			sourceTree = "<group>";
+		};
+		1543DD8F2154F31100B5558F /* SettingModules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SettingModules;
+			sourceTree = "<group>";
+		};
+		1543DD902154F6E400B5558F /* EpisodeList */ = {
+			isa = PBXGroup;
+			children = (
+				1543DD962154F77D00B5558F /* Model */,
+				1543DD932154F77C00B5558F /* VC */,
+				1543DD942154F77D00B5558F /* View */,
+				1543DD952154F77D00B5558F /* ViewModel */,
+			);
+			path = EpisodeList;
+			sourceTree = "<group>";
+		};
+		1543DD932154F77C00B5558F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				1543DD912154F73A00B5558F /* ZQEpisodeListViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		1543DD942154F77D00B5558F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1543DD952154F77D00B5558F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1543DD962154F77D00B5558F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1543DD972154F78500B5558F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				15C502FB2150F519004FC817 /* ZQHomeViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		1543DD982154F78500B5558F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1543DD992154F78500B5558F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1543DD9A2154F78600B5558F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1543DD9B2154F7A600B5558F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				15C503032150FE80004FC817 /* ZQMineViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		1543DD9C2154F7A600B5558F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1543DD9D2154F7A600B5558F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1543DD9E2154F7A700B5558F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1543DD9F2154F7BA00B5558F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				15C502FF2150F54A004FC817 /* ZQNewsViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		1543DDA02154F7BA00B5558F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1543DDA12154F7BA00B5558F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1543DDA22154F7BA00B5558F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1543DDA32154F7C300B5558F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				15C503072150FEA4004FC817 /* ZQSettingViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		1543DDA42154F7C300B5558F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1543DDA52154F7C300B5558F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1543DDA62154F7C400B5558F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1543DDA72154F85300B5558F /* Extenstion */ = {
+			isa = PBXGroup;
+			children = (
+				1543DDA82154F86A00B5558F /* UIViewController */,
+			);
+			path = Extenstion;
+			sourceTree = "<group>";
+		};
+		1543DDA82154F86A00B5558F /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1543DDA92154F8A300B5558F /* ZQUIViewControllerExtensions.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
 		15816CE521480A920081290F = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +394,7 @@
 		15816CF021480A920081290F /* ZQNews */ = {
 			isa = PBXGroup;
 			children = (
+				1543DDA72154F85300B5558F /* Extenstion */,
 				15C502F62150F4B2004FC817 /* Base */,
 				15A63AD42153AAD000282232 /* Tool */,
 				15C3C77A214D013F004BBA38 /* Define */,
@@ -213,7 +413,7 @@
 			isa = PBXGroup;
 			children = (
 				15A63AD52153AAE400282232 /* ZQTool.swift */,
-				15A63AD72153AAF300282232 /* ZQNetWorkTool.swift */,
+				15FFA0752154E3E3006036C4 /* HttpTool */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -229,7 +429,7 @@
 		15C3C77A214D013F004BBA38 /* Define */ = {
 			isa = PBXGroup;
 			children = (
-				15C3C80F214D0588004BBA38 /* APURL.swift */,
+				15C3C80F214D0588004BBA38 /* ZQAPURL.swift */,
 				15C3C80D214D0588004BBA38 /* ZQColor.swift */,
 				15C3C80E214D0588004BBA38 /* ZQCommonHeader.swift */,
 				15C3C810214D0588004BBA38 /* ZQNotificationMacros.swift */,
@@ -253,18 +453,21 @@
 		15C3C792214D02CB004BBA38 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				15C3C81E214D2FEA004BBA38 /* Home */,
-				15C3C793214D02E2004BBA38 /* Main */,
+				1543DD8F2154F31100B5558F /* SettingModules */,
+				1543DD8E2154F2EF00B5558F /* NewsModules */,
+				1543DD8D2154F2E800B5558F /* MineModules */,
+				15C3C81E214D2FEA004BBA38 /* HomeModules */,
+				15C3C793214D02E2004BBA38 /* MainModules */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		15C3C793214D02E2004BBA38 /* Main */ = {
+		15C3C793214D02E2004BBA38 /* MainModules */ = {
 			isa = PBXGroup;
 			children = (
 				15816CF521480A920081290F /* MainModules.storyboard */,
 			);
-			path = Main;
+			path = MainModules;
 			sourceTree = "<group>";
 		};
 		15C3C79A214D03A2004BBA38 /* EZSwiftExtensions */ = {
@@ -329,22 +532,23 @@
 		15C3C817214D2AFF004BBA38 /* MainModules */ = {
 			isa = PBXGroup;
 			children = (
-				15C3C81A214D2B42004BBA38 /* MainTabBarViewController.swift */,
+				15C3C81A214D2B42004BBA38 /* ZQMainTabBarViewController.swift */,
 			);
 			path = MainModules;
 			sourceTree = "<group>";
 		};
-		15C3C81E214D2FEA004BBA38 /* Home */ = {
+		15C3C81E214D2FEA004BBA38 /* HomeModules */ = {
 			isa = PBXGroup;
 			children = (
 				15C3C81F214D3004004BBA38 /* HomeModules.storyboard */,
 			);
-			path = Home;
+			path = HomeModules;
 			sourceTree = "<group>";
 		};
 		15C502F42150F498004FC817 /* HomeModules */ = {
 			isa = PBXGroup;
 			children = (
+				1543DD902154F6E400B5558F /* EpisodeList */,
 				15C502F52150F498004FC817 /* Home */,
 			);
 			path = HomeModules;
@@ -353,7 +557,10 @@
 		15C502F52150F498004FC817 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				15C502FB2150F519004FC817 /* HomeViewController.swift */,
+				1543DD9A2154F78600B5558F /* Model */,
+				1543DD972154F78500B5558F /* VC */,
+				1543DD982154F78500B5558F /* View */,
+				1543DD992154F78500B5558F /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -387,7 +594,10 @@
 		15C502FE2150F534004FC817 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				15C502FF2150F54A004FC817 /* NewsViewController.swift */,
+				1543DDA22154F7BA00B5558F /* Model */,
+				1543DD9F2154F7BA00B5558F /* VC */,
+				1543DDA02154F7BA00B5558F /* View */,
+				1543DDA12154F7BA00B5558F /* ViewModel */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -403,7 +613,10 @@
 		15C503022150F55C004FC817 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				15C503032150FE80004FC817 /* MineViewController.swift */,
+				1543DD9E2154F7A700B5558F /* Model */,
+				1543DD9B2154F7A600B5558F /* VC */,
+				1543DD9C2154F7A600B5558F /* View */,
+				1543DD9D2154F7A600B5558F /* ViewModel */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -419,7 +632,10 @@
 		15C503062150FE95004FC817 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				15C503072150FEA4004FC817 /* SettingViewController.swift */,
+				1543DDA62154F7C400B5558F /* Model */,
+				1543DDA32154F7C300B5558F /* VC */,
+				1543DDA42154F7C300B5558F /* View */,
+				1543DDA52154F7C300B5558F /* ViewModel */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -430,6 +646,15 @@
 				15C5030A2150FED2004FC817 /* BaseModel.swift */,
 			);
 			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		15FFA0752154E3E3006036C4 /* HttpTool */ = {
+			isa = PBXGroup;
+			children = (
+				15A63AD72153AAF300282232 /* ZQNetWorkTool.swift */,
+				15FFA0762154E3F8006036C4 /* ZQApiMainHttpTarget.swift */,
+			);
+			path = HttpTool;
 			sourceTree = "<group>";
 		};
 		3075644AEA6991B1D70B7836 /* Frameworks */ = {
@@ -528,6 +753,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZQNews/Pods-ZQNews-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/LTScrollView/LTScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
@@ -542,6 +768,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
@@ -591,22 +818,25 @@
 				15C3C7ED214D03A3004BBA38 /* CharacterExtensions.swift in Sources */,
 				15C3C813214D0588004BBA38 /* ZQCommonHeader.swift in Sources */,
 				15C3C7D1214D03A3004BBA38 /* BlockPan.swift in Sources */,
-				15C3C81B214D2B42004BBA38 /* MainTabBarViewController.swift in Sources */,
+				15C3C81B214D2B42004BBA38 /* ZQMainTabBarViewController.swift in Sources */,
 				15C3C7D4214D03A3004BBA38 /* BlockWebView.swift in Sources */,
+				15FFA0772154E3F8006036C4 /* ZQApiMainHttpTarget.swift in Sources */,
 				15C3C802214D03A3004BBA38 /* UIEdgeInsets.swift in Sources */,
 				15C3C7E4214D03A3004BBA38 /* DoubleExtensions.swift in Sources */,
 				15C3C7D9214D03A3004BBA38 /* DictionaryExtensions.swift in Sources */,
 				15C3C7E2214D03A3004BBA38 /* BoolExtensions.swift in Sources */,
 				15C3C7D2214D03A3004BBA38 /* ArrayExtensions.swift in Sources */,
+				1543DDAA2154F8A300B5558F /* ZQUIViewControllerExtensions.swift in Sources */,
 				15C3C7E1214D03A3004BBA38 /* UIColoredView.swift in Sources */,
 				15C3C7F3214D03A3004BBA38 /* BlockLongPress.swift in Sources */,
 				15C3C7FA214D03A3004BBA38 /* UIApplicationExtensions.swift in Sources */,
-				15C503082150FEA4004FC817 /* SettingViewController.swift in Sources */,
+				15C503082150FEA4004FC817 /* ZQSettingViewController.swift in Sources */,
 				15A63AD62153AAE400282232 /* ZQTool.swift in Sources */,
+				1543DD922154F73A00B5558F /* ZQEpisodeListViewController.swift in Sources */,
 				15C3C812214D0588004BBA38 /* ZQColor.swift in Sources */,
 				15C3C7E8214D03A3004BBA38 /* FileManagerExtension.swift in Sources */,
 				15C3C7E9214D03A3004BBA38 /* CollectionsExtension.swift in Sources */,
-				15C502FC2150F519004FC817 /* HomeViewController.swift in Sources */,
+				15C502FC2150F519004FC817 /* ZQHomeViewController.swift in Sources */,
 				15C3C7DB214D03A3004BBA38 /* UIBarButtonItemExtensions.swift in Sources */,
 				15C3C815214D0588004BBA38 /* ZQNotificationMacros.swift in Sources */,
 				15C3C7CF214D03A3004BBA38 /* CGRectExtensions.swift in Sources */,
@@ -624,9 +854,9 @@
 				15C3C7F5214D03A3004BBA38 /* UILabelExtensions.swift in Sources */,
 				15C3C7E3214D03A3004BBA38 /* EZSwiftFunctions.swift in Sources */,
 				15C3C816214D0588004BBA38 /* ZQUserDefaultMacros.swift in Sources */,
-				15C503042150FE80004FC817 /* MineViewController.swift in Sources */,
+				15C503042150FE80004FC817 /* ZQMineViewController.swift in Sources */,
 				15C3C7F9214D03A3004BBA38 /* UserDefaultsExtension.swift in Sources */,
-				15C3C814214D0588004BBA38 /* APURL.swift in Sources */,
+				15C3C814214D0588004BBA38 /* ZQAPURL.swift in Sources */,
 				15C3C7D3214D03A3004BBA38 /* UITextFieldExtensions.swift in Sources */,
 				15C3C7E6214D03A3004BBA38 /* URLExtensions.swift in Sources */,
 				15C3C7D6214D03A3004BBA38 /* TimerExtensions.swift in Sources */,
@@ -649,7 +879,7 @@
 				15C3C7EA214D03A3004BBA38 /* UIImageExtensions.swift in Sources */,
 				15C3C7D8214D03A3004BBA38 /* UITextViewExtensions.swift in Sources */,
 				15C3C7DD214D03A3004BBA38 /* StringExtensions.swift in Sources */,
-				15C503002150F54A004FC817 /* NewsViewController.swift in Sources */,
+				15C503002150F54A004FC817 /* ZQNewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

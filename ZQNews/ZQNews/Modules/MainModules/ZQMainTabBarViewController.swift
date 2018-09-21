@@ -9,7 +9,7 @@
 
 import RAMAnimatedTabBarController
 
-class MainTabBarViewController: RAMAnimatedTabBarController {
+class ZQMainTabBarViewController: RAMAnimatedTabBarController {
 
     // MARK: - LifeCycle
     override func viewDidLoad() {
@@ -20,17 +20,17 @@ class MainTabBarViewController: RAMAnimatedTabBarController {
     
 }
     
-extension MainTabBarViewController {
+extension ZQMainTabBarViewController {
     // MARK: - <##>Pirvate Method
     private func creatChildVCS(){
         //首页
-        addChildVC(childVC: HomeViewController(), title: "首页", image: UIImage(imageLiteralResourceName: "home"), selecteImage: UIImage(named: "home_sel"))
+        addChildVC(childVC: ZQHomeViewController(), title: "首页", image: UIImage(imageLiteralResourceName: "home"), selecteImage: UIImage(named: "home_sel"))
         //News
-        addChildVC(childVC: NewsViewController(), title: "新闻", image: UIImage(imageLiteralResourceName: "news"), selecteImage: UIImage(named: "news_sel"))
+        addChildVC(childVC: ZQNewsViewController(), title: "新闻", image: UIImage(imageLiteralResourceName: "news"), selecteImage: UIImage(named: "news_sel"))
         //我的
-        addChildVC(childVC: MineViewController(), title: "我的", image: UIImage(imageLiteralResourceName: "user"), selecteImage: UIImage(named: "user_sel"))
+        addChildVC(childVC: ZQMineViewController(), title: "我的", image: UIImage(imageLiteralResourceName: "user"), selecteImage: UIImage(named: "user_sel"))
         //设置
-        addChildVC(childVC: SettingViewController(), title: "设置", image: UIImage(imageLiteralResourceName: "settings"), selecteImage: UIImage(named: "settings_sel"))
+        addChildVC(childVC: ZQSettingViewController(), title: "设置", image: UIImage(imageLiteralResourceName: "settings"), selecteImage: UIImage(named: "settings_sel"))
     }
     
     ///添加一个控制器
