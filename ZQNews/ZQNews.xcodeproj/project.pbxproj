@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1505E9F5215A268B00AE2D39 /* GlobalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505E9F4215A268B00AE2D39 /* GlobalObject.swift */; };
+		1505E9F8215A2B6700AE2D39 /* ZQRrefreshTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505E9F7215A2B6700AE2D39 /* ZQRrefreshTableView.swift */; };
+		1505E9FA215A320A00AE2D39 /* ZQEpisodeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505E9F9215A320A00AE2D39 /* ZQEpisodeListViewModel.swift */; };
+		1505E9FD215A322100AE2D39 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505E9FC215A322100AE2D39 /* BaseViewModel.swift */; };
+		1505EA00215A407200AE2D39 /* ZQEpisodeListApiTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505E9FF215A407200AE2D39 /* ZQEpisodeListApiTarget.swift */; };
+		1505EA02215A431F00AE2D39 /* ZQTargetTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505EA01215A431F00AE2D39 /* ZQTargetTypeExtensions.swift */; };
 		1543DD922154F73A00B5558F /* ZQEpisodeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1543DD912154F73A00B5558F /* ZQEpisodeListViewController.swift */; };
 		1543DDAA2154F8A300B5558F /* ZQUIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1543DDA92154F8A300B5558F /* ZQUIViewControllerExtensions.swift */; };
 		15816CF221480A920081290F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15816CF121480A920081290F /* AppDelegate.swift */; };
@@ -81,11 +87,16 @@
 		15C503082150FEA4004FC817 /* ZQSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C503072150FEA4004FC817 /* ZQSettingViewController.swift */; };
 		15C5030B2150FED2004FC817 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C5030A2150FED2004FC817 /* BaseModel.swift */; };
 		15C5030D2151040E004FC817 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C5030C2151040E004FC817 /* BaseNavigationViewController.swift */; };
-		15FFA0772154E3F8006036C4 /* ZQApiMainHttpTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FFA0762154E3F8006036C4 /* ZQApiMainHttpTarget.swift */; };
 		3F5572A9F67AF438987D5482 /* Pods_ZQNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DCFBF84A794971D025C8A7 /* Pods_ZQNews.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1505E9F4215A268B00AE2D39 /* GlobalObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalObject.swift; sourceTree = "<group>"; };
+		1505E9F7215A2B6700AE2D39 /* ZQRrefreshTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQRrefreshTableView.swift; sourceTree = "<group>"; };
+		1505E9F9215A320A00AE2D39 /* ZQEpisodeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQEpisodeListViewModel.swift; sourceTree = "<group>"; };
+		1505E9FC215A322100AE2D39 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		1505E9FF215A407200AE2D39 /* ZQEpisodeListApiTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQEpisodeListApiTarget.swift; sourceTree = "<group>"; };
+		1505EA01215A431F00AE2D39 /* ZQTargetTypeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQTargetTypeExtensions.swift; sourceTree = "<group>"; };
 		1543DD912154F73A00B5558F /* ZQEpisodeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQEpisodeListViewController.swift; sourceTree = "<group>"; };
 		1543DDA92154F8A300B5558F /* ZQUIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQUIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		15816CEE21480A920081290F /* ZQNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZQNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,7 +173,6 @@
 		15C503072150FEA4004FC817 /* ZQSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQSettingViewController.swift; sourceTree = "<group>"; };
 		15C5030A2150FED2004FC817 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		15C5030C2151040E004FC817 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
-		15FFA0762154E3F8006036C4 /* ZQApiMainHttpTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQApiMainHttpTarget.swift; sourceTree = "<group>"; };
 		5660BEAF912FA16076CC493D /* Pods-ZQNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZQNews/Pods-ZQNews.release.xcconfig"; sourceTree = "<group>"; };
 		9AD71F520DDBF5D66836608B /* Pods-ZQNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZQNews/Pods-ZQNews.debug.xcconfig"; sourceTree = "<group>"; };
 		B9DCFBF84A794971D025C8A7 /* Pods_ZQNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZQNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +190,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1505E9F2215A21F500AE2D39 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				1505E9F4215A268B00AE2D39 /* GlobalObject.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		1505E9F3215A223800AE2D39 /* ZQTool */ = {
+			isa = PBXGroup;
+			children = (
+				15A63AD52153AAE400282232 /* ZQTool.swift */,
+			);
+			path = ZQTool;
+			sourceTree = "<group>";
+		};
+		1505E9F6215A2B3200AE2D39 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1505E9F7215A2B6700AE2D39 /* ZQRrefreshTableView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1505E9FB215A321000AE2D39 /* BaseViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1505E9FC215A322100AE2D39 /* BaseViewModel.swift */,
+			);
+			path = BaseViewModel;
+			sourceTree = "<group>";
+		};
+		1505E9FE215A381800AE2D39 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				1505E9FF215A407200AE2D39 /* ZQEpisodeListApiTarget.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
 		1543DD8D2154F2E800B5558F /* MineModules */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +254,7 @@
 		1543DD902154F6E400B5558F /* EpisodeList */ = {
 			isa = PBXGroup;
 			children = (
+				1505E9FE215A381800AE2D39 /* Api */,
 				1543DD962154F77D00B5558F /* Model */,
 				1543DD932154F77C00B5558F /* VC */,
 				1543DD942154F77D00B5558F /* View */,
@@ -230,6 +281,7 @@
 		1543DD952154F77D00B5558F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1505E9F9215A320A00AE2D39 /* ZQEpisodeListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -394,10 +446,12 @@
 		15816CF021480A920081290F /* ZQNews */ = {
 			isa = PBXGroup;
 			children = (
+				1505E9F2215A21F500AE2D39 /* Global */,
 				1543DDA72154F85300B5558F /* Extenstion */,
 				15C502F62150F4B2004FC817 /* Base */,
 				15A63AD42153AAD000282232 /* Tool */,
 				15C3C77A214D013F004BBA38 /* Define */,
+				1505E9F6215A2B3200AE2D39 /* Utils */,
 				15C3C779214D0115004BBA38 /* Vendor */,
 				15C3C77C214D018E004BBA38 /* Modules */,
 				15C3C792214D02CB004BBA38 /* Storyboard */,
@@ -412,8 +466,8 @@
 		15A63AD42153AAD000282232 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				15A63AD52153AAE400282232 /* ZQTool.swift */,
-				15FFA0752154E3E3006036C4 /* HttpTool */,
+				15FFA0752154E3E3006036C4 /* ZQNetWorkTool */,
+				1505E9F3215A223800AE2D39 /* ZQTool */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -568,6 +622,7 @@
 		15C502F62150F4B2004FC817 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				1505E9FB215A321000AE2D39 /* BaseViewModel */,
 				15C503092150FEC2004FC817 /* BaseModel */,
 				15C502F82150F4B5004FC817 /* BaseVC */,
 			);
@@ -648,13 +703,13 @@
 			path = BaseModel;
 			sourceTree = "<group>";
 		};
-		15FFA0752154E3E3006036C4 /* HttpTool */ = {
+		15FFA0752154E3E3006036C4 /* ZQNetWorkTool */ = {
 			isa = PBXGroup;
 			children = (
 				15A63AD72153AAF300282232 /* ZQNetWorkTool.swift */,
-				15FFA0762154E3F8006036C4 /* ZQApiMainHttpTarget.swift */,
+				1505EA01215A431F00AE2D39 /* ZQTargetTypeExtensions.swift */,
 			);
-			path = HttpTool;
+			path = ZQNetWorkTool;
 			sourceTree = "<group>";
 		};
 		3075644AEA6991B1D70B7836 /* Frameworks */ = {
@@ -752,6 +807,8 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZQNews/Pods-ZQNews-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/LTScrollView/LTScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
@@ -767,6 +824,8 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
@@ -820,14 +879,15 @@
 				15C3C7D1214D03A3004BBA38 /* BlockPan.swift in Sources */,
 				15C3C81B214D2B42004BBA38 /* ZQMainTabBarViewController.swift in Sources */,
 				15C3C7D4214D03A3004BBA38 /* BlockWebView.swift in Sources */,
-				15FFA0772154E3F8006036C4 /* ZQApiMainHttpTarget.swift in Sources */,
 				15C3C802214D03A3004BBA38 /* UIEdgeInsets.swift in Sources */,
 				15C3C7E4214D03A3004BBA38 /* DoubleExtensions.swift in Sources */,
 				15C3C7D9214D03A3004BBA38 /* DictionaryExtensions.swift in Sources */,
 				15C3C7E2214D03A3004BBA38 /* BoolExtensions.swift in Sources */,
 				15C3C7D2214D03A3004BBA38 /* ArrayExtensions.swift in Sources */,
 				1543DDAA2154F8A300B5558F /* ZQUIViewControllerExtensions.swift in Sources */,
+				1505E9F5215A268B00AE2D39 /* GlobalObject.swift in Sources */,
 				15C3C7E1214D03A3004BBA38 /* UIColoredView.swift in Sources */,
+				1505E9F8215A2B6700AE2D39 /* ZQRrefreshTableView.swift in Sources */,
 				15C3C7F3214D03A3004BBA38 /* BlockLongPress.swift in Sources */,
 				15C3C7FA214D03A3004BBA38 /* UIApplicationExtensions.swift in Sources */,
 				15C503082150FEA4004FC817 /* ZQSettingViewController.swift in Sources */,
@@ -853,15 +913,19 @@
 				15C3C7E0214D03A3004BBA38 /* BlockButton.swift in Sources */,
 				15C3C7F5214D03A3004BBA38 /* UILabelExtensions.swift in Sources */,
 				15C3C7E3214D03A3004BBA38 /* EZSwiftFunctions.swift in Sources */,
+				1505EA02215A431F00AE2D39 /* ZQTargetTypeExtensions.swift in Sources */,
 				15C3C816214D0588004BBA38 /* ZQUserDefaultMacros.swift in Sources */,
+				1505E9FA215A320A00AE2D39 /* ZQEpisodeListViewModel.swift in Sources */,
 				15C503042150FE80004FC817 /* ZQMineViewController.swift in Sources */,
 				15C3C7F9214D03A3004BBA38 /* UserDefaultsExtension.swift in Sources */,
 				15C3C814214D0588004BBA38 /* ZQAPURL.swift in Sources */,
+				1505EA00215A407200AE2D39 /* ZQEpisodeListApiTarget.swift in Sources */,
 				15C3C7D3214D03A3004BBA38 /* UITextFieldExtensions.swift in Sources */,
 				15C3C7E6214D03A3004BBA38 /* URLExtensions.swift in Sources */,
 				15C3C7D6214D03A3004BBA38 /* TimerExtensions.swift in Sources */,
 				15C3C7DE214D03A3004BBA38 /* UIStoryboardExtensions.swift in Sources */,
 				15C3C7EE214D03A3004BBA38 /* BlockTap.swift in Sources */,
+				1505E9FD215A322100AE2D39 /* BaseViewModel.swift in Sources */,
 				15C3C7F7214D03A3004BBA38 /* UIButtonExtensions.swift in Sources */,
 				15C3C7FC214D03A3004BBA38 /* UIUserInterfaceSizeClassExtensions.swift in Sources */,
 				15C3C7D5214D03A3004BBA38 /* CGPointExtensions.swift in Sources */,

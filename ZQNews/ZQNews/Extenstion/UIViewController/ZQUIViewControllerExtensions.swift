@@ -40,6 +40,8 @@ extension UIViewController {
         DLog("change hideNav_viewWillAppear")
     }
     
+    
+    /// 是否隐藏导航栏
     @objc public var isHideNavigationBar: Bool {
         get { return (objc_getAssociatedObject(self, &HideNavigationBar.tKey) as? Bool) ?? false}
         set { objc_setAssociatedObject(self, &HideNavigationBar.tKey, newValue, .OBJC_ASSOCIATION_ASSIGN) }

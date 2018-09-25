@@ -14,7 +14,10 @@ target 'ZQNews' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'ObjectMapper'
   pod 'Spring'
-  pod 'RAMAnimatedTabBarController'
+  pod 'RAMAnimatedTabBarController' , ' 3.5.0'
   pod 'LTScrollView', '~> 0.2.0'
+  pod 'ESPullToRefresh'
+  pod 'KeychainAccess'
   
 end
+

@@ -7,4 +7,10 @@
 
 import Foundation
 
-// MARK: ----- API -----
+// MARK: ----- BaseAPI -----
+let ZQApiopenAPI = "https://www.apiopen.top"
+
+
+// MARK: ----- PathAPI -----
+//段子
+let ZQSatinApiPath = "/satinApi"
