@@ -33,6 +33,16 @@ class BaseViewController: UIViewController {
         view.backgroundColor = ZQColor_ffffff
     }
     
+    func setAutomaticallyAdjustsScrollView(_ scrollView: UIScrollView?) {
+        if #available(iOS 11.0, *) {
+            if scrollView != nil {
+                scrollView?.contentInsetAdjustmentBehavior = .never
+            }
+        } else {
+            automaticallyAdjustsScrollViewInsets = false
+        }
+    }
+    
     //MARK: - KVO
     
     //MARK: - NSNotifaction

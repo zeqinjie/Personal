@@ -15,6 +15,10 @@ class ZQHomeViewController: BaseViewController {
     fileprivate var titles:[String] = ["全部","文字","图片","GIF","视频"]
     fileprivate lazy var layout: LTLayout = {
         let layout = LTLayout()
+        layout.titleColor = UIColor(r: 102, g: 102, b: 102)
+        layout.titleSelectColor = UIColor(r: 34, g: 34, b: 34)
+        layout.titleViewBgColor = ZQColor_ffffff
+        layout.bottomLineColor = ZQColor_ff4400
         layout.isAverage = true
         return layout
     }()
@@ -45,9 +49,12 @@ class ZQHomeViewController: BaseViewController {
 // MARK: - UI
 extension ZQHomeViewController {
     func creatUI()  {
-        for _ in titles {
-            listVCS.append(ZQEpisodeListViewController())
+        for (index,_) in titles.enumerated() {
+            let vc = ZQEpisodeListViewController()
+            vc.type = index + 1
+            listVCS.append(vc)
         }
+        
         let Y: CGFloat = ZQStatusAndNavigationHeigth
         let H: CGFloat = view.bounds.height - Y - ZQTabBarHeight
         
@@ -60,4 +67,14 @@ extension ZQHomeViewController {
         self.view.addSubview(pageManager)
     }
     
+}
+
+
+//MARK: LTSimpleScrollViewDelegate
+extension ZQHomeViewController: LTSimpleScrollViewDelegate {
+    
+    func glt_refreshScrollView(_ scrollView: UIScrollView, _ index: Int) {
+        //注意这里循环引用问题。
+        
+    }
 }

@@ -9,8 +9,8 @@
 import UIKit
 import ESPullToRefresh
 
-class ZQRrefreshTableView: UITableView {
-    var loadMoreBlock:((_ tableView:ZQRrefreshTableView)->())? {
+class ZQRefreshTableView: UITableView {
+    var loadMoreBlock:((_ tableView:ZQRefreshTableView)->())? {
         didSet{
             if loadMoreBlock != nil {
                 self.es.addInfiniteScrolling {[weak self] in
@@ -19,7 +19,7 @@ class ZQRrefreshTableView: UITableView {
             }
         }
     }
-    var loadNewDataBlock:((_ tableView:ZQRrefreshTableView)->())? {
+    var loadNewDataBlock:((_ tableView:ZQRefreshTableView)->())? {
         didSet{
             if loadNewDataBlock != nil {
                 self.es.addPullToRefresh {[weak self] in

@@ -9,5 +9,5 @@
 import UIKit
 
 class BaseViewModel: NSObject {
-
+    let netWorkTool = ZQNetWorkTool.shared
 }
