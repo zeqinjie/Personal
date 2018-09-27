@@ -13,6 +13,7 @@
 		1505E9FD215A322100AE2D39 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505E9FC215A322100AE2D39 /* BaseViewModel.swift */; };
 		1505EA00215A407200AE2D39 /* ZQEpisodeListApiTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505E9FF215A407200AE2D39 /* ZQEpisodeListApiTarget.swift */; };
 		1505EA02215A431F00AE2D39 /* ZQTargetTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505EA01215A431F00AE2D39 /* ZQTargetTypeExtensions.swift */; };
+		150AF93B215CE58600321E31 /* UIViewControllerShowHudEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150AF93A215CE58600321E31 /* UIViewControllerShowHudEx.swift */; };
 		15254841215CAE5100CBE457 /* LTSimpleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15254838215CAE5000CBE457 /* LTSimpleManager.swift */; };
 		15254842215CAE5100CBE457 /* LTDispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1525483A215CAE5000CBE457 /* LTDispatchQueueExtension.swift */; };
 		15254843215CAE5100CBE457 /* LTVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1525483B215CAE5000CBE457 /* LTVCExtension.swift */; };
@@ -22,7 +23,7 @@
 		15254847215CAE5100CBE457 /* LTPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1525483F215CAE5000CBE457 /* LTPageView.swift */; };
 		15254848215CAE5100CBE457 /* LTTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15254840215CAE5000CBE457 /* LTTableView.swift */; };
 		1543DD922154F73A00B5558F /* ZQEpisodeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1543DD912154F73A00B5558F /* ZQEpisodeListViewController.swift */; };
-		1543DDAA2154F8A300B5558F /* ZQUIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1543DDA92154F8A300B5558F /* ZQUIViewControllerExtensions.swift */; };
+		1543DDAA2154F8A300B5558F /* UIViewControllerHideNavigationBarEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1543DDA92154F8A300B5558F /* UIViewControllerHideNavigationBarEx.swift */; };
 		1572663B215B738D005C849D /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572663A215B738D005C849D /* SwiftNotice.swift */; };
 		1572663D215B7710005C849D /* ZQEpisodeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572663C215B770F005C849D /* ZQEpisodeListModel.swift */; };
 		1572663F215B773B005C849D /* ZQEpisodeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572663E215B773B005C849D /* ZQEpisodeListTableViewCell.swift */; };
@@ -111,6 +112,7 @@
 		1505E9FC215A322100AE2D39 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		1505E9FF215A407200AE2D39 /* ZQEpisodeListApiTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQEpisodeListApiTarget.swift; sourceTree = "<group>"; };
 		1505EA01215A431F00AE2D39 /* ZQTargetTypeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQTargetTypeExtensions.swift; sourceTree = "<group>"; };
+		150AF93A215CE58600321E31 /* UIViewControllerShowHudEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerShowHudEx.swift; sourceTree = "<group>"; };
 		15254838215CAE5000CBE457 /* LTSimpleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTSimpleManager.swift; sourceTree = "<group>"; };
 		1525483A215CAE5000CBE457 /* LTDispatchQueueExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTDispatchQueueExtension.swift; sourceTree = "<group>"; };
 		1525483B215CAE5000CBE457 /* LTVCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTVCExtension.swift; sourceTree = "<group>"; };
@@ -120,7 +122,7 @@
 		1525483F215CAE5000CBE457 /* LTPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTPageView.swift; sourceTree = "<group>"; };
 		15254840215CAE5000CBE457 /* LTTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTTableView.swift; sourceTree = "<group>"; };
 		1543DD912154F73A00B5558F /* ZQEpisodeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQEpisodeListViewController.swift; sourceTree = "<group>"; };
-		1543DDA92154F8A300B5558F /* ZQUIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQUIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		1543DDA92154F8A300B5558F /* UIViewControllerHideNavigationBarEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerHideNavigationBarEx.swift; sourceTree = "<group>"; };
 		1572663A215B738D005C849D /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
 		1572663C215B770F005C849D /* ZQEpisodeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQEpisodeListModel.swift; sourceTree = "<group>"; };
 		1572663E215B773B005C849D /* ZQEpisodeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQEpisodeListTableViewCell.swift; sourceTree = "<group>"; };
@@ -475,7 +477,8 @@
 		1543DDA82154F86A00B5558F /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1543DDA92154F8A300B5558F /* ZQUIViewControllerExtensions.swift */,
+				1543DDA92154F8A300B5558F /* UIViewControllerHideNavigationBarEx.swift */,
+				150AF93A215CE58600321E31 /* UIViewControllerShowHudEx.swift */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -956,10 +959,11 @@
 				15C3C802214D03A3004BBA38 /* UIEdgeInsets.swift in Sources */,
 				15C3C7E4214D03A3004BBA38 /* DoubleExtensions.swift in Sources */,
 				15C3C7D9214D03A3004BBA38 /* DictionaryExtensions.swift in Sources */,
+				150AF93B215CE58600321E31 /* UIViewControllerShowHudEx.swift in Sources */,
 				15254841215CAE5100CBE457 /* LTSimpleManager.swift in Sources */,
 				15C3C7E2214D03A3004BBA38 /* BoolExtensions.swift in Sources */,
 				15C3C7D2214D03A3004BBA38 /* ArrayExtensions.swift in Sources */,
-				1543DDAA2154F8A300B5558F /* ZQUIViewControllerExtensions.swift in Sources */,
+				1543DDAA2154F8A300B5558F /* UIViewControllerHideNavigationBarEx.swift in Sources */,
 				1505E9F5215A268B00AE2D39 /* GlobalObject.swift in Sources */,
 				15C3C7E1214D03A3004BBA38 /* UIColoredView.swift in Sources */,
 				1505E9F8215A2B6700AE2D39 /* ZQRefreshTableView.swift in Sources */,

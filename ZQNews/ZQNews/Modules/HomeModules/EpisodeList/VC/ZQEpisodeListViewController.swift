@@ -22,6 +22,7 @@ class ZQEpisodeListViewController: BaseViewController {
         super.viewDidLoad()
         creatUI()
         // Do any additional setup after loading the view.
+        showHud()
         loadFirstData()
     }
 
@@ -31,10 +32,10 @@ class ZQEpisodeListViewController: BaseViewController {
     
     //MARK: - API
     fileprivate func loadData() {
-        viewModel.getEpisodeData(page: self.page, type: self.type, successBlock: { (json) in
-            
-        }, failBlock: { (fail) in
-        
+        viewModel.getEpisodeData(page: self.page, type: self.type, successBlock: {[unowned self] (json) in
+            self.hideHud()
+        }, failBlock: { [unowned self] (fail) in
+            self.hideHud()
         })
     }
     

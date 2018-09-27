@@ -161,7 +161,7 @@ class SwiftNotice: NSObject {
         window.backgroundColor = UIColor.clear
         let mainView = UIView()
         mainView.layer.cornerRadius = 12
-        mainView.backgroundColor = UIColor(red:0, green:0, blue:0, alpha: 0.8)
+//        mainView.backgroundColor = UIColor(red:0, green:0, blue:0, alpha: 0.8)
         
         if imageNames.count > 0 {
             if imageNames.count > timerTimes {
@@ -179,7 +179,7 @@ class SwiftNotice: NSObject {
                 timer.resume()
             }
         } else {
-            let ai = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
+            let ai = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
             ai.frame = CGRect(x: 21, y: 21, width: 36, height: 36)
             ai.startAnimating()
             mainView.addSubview(ai)
