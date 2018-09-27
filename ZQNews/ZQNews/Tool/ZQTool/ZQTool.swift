@@ -38,4 +38,22 @@ class ZQTool: NSObject {
         guard let uuid = uuidString else { return "" }
         return uuid
     }
+    
+    
+    /// 通過storyboardName 獲取 vc
+    ///
+    /// - Parameters:
+    ///   - storyboardName: 故事版名稱
+    ///   - identifier: vc id
+    /// - Returns: vc
+    class func instantiateVC<T>(_ storyboardName:String,_ identifier: T.Type) -> T? {
+        let storyboardID = String(describing: identifier)
+        let storyBoard = UIStoryboard(name: storyboardName, bundle: nil)
+        if let vc = storyBoard.instantiateViewController(withIdentifier: storyboardID) as? T {
+            return vc
+        } else {
+            return nil
+        }
+        
+    }
 }

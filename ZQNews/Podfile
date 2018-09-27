@@ -12,12 +12,11 @@ target 'ZQNews' do
   pod 'RxCocoa', '~> 4.0'
   pod 'Kingfisher', '4.9.0'
   pod 'SwiftyJSON', '~> 4.0'
-  pod 'ObjectMapper'
   pod 'Spring'
   pod 'RAMAnimatedTabBarController' , ' 3.5.0'
-  pod 'LTScrollView', '~> 0.2.0'
   pod 'ESPullToRefresh'
   pod 'KeychainAccess'
+  pod 'HandyJSON', ' 4.1.1'
   
 end
 

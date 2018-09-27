@@ -32,8 +32,7 @@
         <!--Episode List View Controller-->
         <scene sceneID="gbH-Vv-Lvh">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1rM-k0-AO6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="hPQ-qt-XUZ" customClass="ZQEpisodeListViewController" customModule="ZQNews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ZQEpisodeListViewController" id="hPQ-qt-XUZ" customClass="ZQEpisodeListViewController" customModule="ZQNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tRL-kl-CKa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,9 +64,10 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tableView" destination="ycc-TT-SbD" id="lUF-9O-uCp"/>
+                        <outlet property="tableView" destination="ycc-TT-SbD" id="vkV-y5-txb"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1rM-k0-AO6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="52" y="746.17691154422789"/>
         </scene>

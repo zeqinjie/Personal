@@ -8,27 +8,57 @@
 
 import UIKit
 
+class ZQEpisodeListResultModel: BaseModel {
+    var data:[ZQEpisodeListModel]?
+    var msg: String?
+    var code: Int?
+}
+
+
 class ZQEpisodeListModel: BaseModel {
-    //1:小图*1，2:小图*3，3:大图*1
-    @objc var type:Int = 0
+    /*text : 文字  image : 图片   gif : Gif   video: 视频 */
+    var type = ""
+    var text = ""
+    var username = ""
+    var uid = ""
+    var header = ""
+    var top_commentsVoiceuri:String?
+    var top_commentsContent:String?
+    var top_commentsHeader:String?
+    var top_commentsName:String?
+    var passtime =  ""
+    var image = ""
+    var gif = ""
+    var thumbnail = ""
+    var video = ""
+    var soureid = 0
+    var up = 0
+    var down = 0
+    var forward = 0
+    var comment = 0
     
     func cellIdentifier() -> String {
-        if type == 3 {
+        if type == "text" {
             return ZQEpisodeListEnumTypeBigImgNews//大圖1
-        }else if type == 2 {
+        }else if type == "image" {
             return ZQEpisodeListEnumTypeManyImgNews//小圖3
-        }else{
+        }else if type == "gif" {
+            return ZQEpisodeListEnumTypeSmallImgNews //小圖1
+        }else {
             return ZQEpisodeListEnumTypeSmallImgNews //小圖1
         }
+        
     }
     
     func cellIdHeigth() -> CGFloat {
-        if type == 3 {
-            return 295.0 //大圖1
-        }else if type ==  2 {
-            return 188.0 //小圖3
-        }else{
-            return 135.0 //小圖1
+        if type == "text" {
+            return 295.0
+        }else if type == "image" {
+            return 188.0
+        }else if type == "gif" {
+            return 135.0
+        }else {//video
+            return 135.0
         }
         
     }

@@ -10,4 +10,6 @@ import UIKit
 
 class BaseViewModel: NSObject {
     let netWorkTool = ZQNetWorkTool.shared
+    typealias UpDataBlock = () ->Void
+    var updataBlock:UpDataBlock?
 }

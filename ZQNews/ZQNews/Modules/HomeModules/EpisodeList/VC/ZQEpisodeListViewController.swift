@@ -15,35 +15,44 @@ class ZQEpisodeListViewController: BaseViewController {
     var page = 1
     var type = 1
     
-    @IBOutlet weak var tableView: ZQRefreshTableView!
-    
+    @IBOutlet weak var tableView: ZQRefreshTableView?
     
     //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadData()
+        creatUI()
         // Do any additional setup after loading the view.
+        loadFirstData()
     }
 
+    
     //MARK: - Setter && Getter
     
-    //MARK: - UI
     
     //MARK: - API
-    func loadData() {
-        viewModel.getEpisodeData(page: self.page, type: self.type)
+    fileprivate func loadData() {
+        viewModel.getEpisodeData(page: self.page, type: self.type, successBlock: { (json) in
+            
+        }, failBlock: { (fail) in
+        
+        })
     }
-    
-    
     
     //MARK: - IBAction
     
     //MARK: - Override Method
     
     //MARK: - Private Method
+    fileprivate func loadFirstData()  {
+        self.page = 1
+        self.loadData()
+    }
+    
     
     //MARK: - Public Method
-    
+    func refreshHeaderData(tableView:ZQRefreshTableView)  {
+        
+    }
     //MARK: - KVO
     
     //MARK: - NSNotifaction
@@ -53,12 +62,11 @@ class ZQEpisodeListViewController: BaseViewController {
 // MARK: - UI
 extension ZQEpisodeListViewController{
     @objc func creatUI()  {
-        self.view.addSubview(self.tableView)
-        
-//        self.tableView.loadMoreDataBlock = { [unowned self] (tableView) in
-//            self.page += 1
-//            self.loadData()
-//        }
+        self.tableView?.loadMoreBlock = {
+            (tableView) in
+            self.page += 1
+            self.loadData()
+        }
     }
 }
 

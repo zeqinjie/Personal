@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import LTScrollView
+
 class ZQHomeViewController: BaseViewController {
 
     fileprivate var pageManager:LTSimpleManager?
@@ -41,7 +41,14 @@ class ZQHomeViewController: BaseViewController {
     //MARK: - Override Method
     
     //MARK: - Private Method
-    
+    ///上拉重新刷新數據
+    func refreshContentListData(_ tableView: ZQRefreshTableView, _ index: Int){
+        if self.listVCS.count > index {
+            let vc = self.listVCS[index]
+//            vc.refreshHeaderData(tableView:tableView)
+        }
+        
+    }
     //MARK: - Public Method
     
 }
@@ -50,9 +57,11 @@ class ZQHomeViewController: BaseViewController {
 extension ZQHomeViewController {
     func creatUI()  {
         for (index,_) in titles.enumerated() {
-            let vc = ZQEpisodeListViewController()
-            vc.type = index + 1
-            listVCS.append(vc)
+            let vc = ZQTool.instantiateVC("HomeModules", ZQEpisodeListViewController.self)
+            if let vc = vc {
+                vc.type = index + 1
+                listVCS.append(vc)
+            }
         }
         
         let Y: CGFloat = ZQStatusAndNavigationHeigth
@@ -62,7 +71,7 @@ extension ZQHomeViewController {
         pageManager?.didSelectIndexHandle({ (index) in
             DLog("didSelectIndexHandle = \(index)")
         })
-        
+        pageManager?.delegate = self
         guard let pageManager = pageManager else { return }
         self.view.addSubview(pageManager)
     }
@@ -75,6 +84,12 @@ extension ZQHomeViewController: LTSimpleScrollViewDelegate {
     
     func glt_refreshScrollView(_ scrollView: UIScrollView, _ index: Int) {
         //注意这里循环引用问题。
-        
+        if scrollView is ZQRefreshTableView {
+            let tableView:ZQRefreshTableView = scrollView as! ZQRefreshTableView
+            tableView.loadNewDataBlock = { [unowned self] (tableView:ZQRefreshTableView?) in
+                self.refreshContentListData(tableView!,index)
+            }
+            
+        }
     }
 }

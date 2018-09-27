@@ -13,6 +13,14 @@
 		1505E9FD215A322100AE2D39 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505E9FC215A322100AE2D39 /* BaseViewModel.swift */; };
 		1505EA00215A407200AE2D39 /* ZQEpisodeListApiTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505E9FF215A407200AE2D39 /* ZQEpisodeListApiTarget.swift */; };
 		1505EA02215A431F00AE2D39 /* ZQTargetTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505EA01215A431F00AE2D39 /* ZQTargetTypeExtensions.swift */; };
+		15254841215CAE5100CBE457 /* LTSimpleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15254838215CAE5000CBE457 /* LTSimpleManager.swift */; };
+		15254842215CAE5100CBE457 /* LTDispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1525483A215CAE5000CBE457 /* LTDispatchQueueExtension.swift */; };
+		15254843215CAE5100CBE457 /* LTVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1525483B215CAE5000CBE457 /* LTVCExtension.swift */; };
+		15254844215CAE5100CBE457 /* LTScrollExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1525483C215CAE5000CBE457 /* LTScrollExtension.swift */; };
+		15254845215CAE5100CBE457 /* LTAdvancedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1525483D215CAE5000CBE457 /* LTAdvancedManager.swift */; };
+		15254846215CAE5100CBE457 /* LTTableViewProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1525483E215CAE5000CBE457 /* LTTableViewProtocal.swift */; };
+		15254847215CAE5100CBE457 /* LTPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1525483F215CAE5000CBE457 /* LTPageView.swift */; };
+		15254848215CAE5100CBE457 /* LTTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15254840215CAE5000CBE457 /* LTTableView.swift */; };
 		1543DD922154F73A00B5558F /* ZQEpisodeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1543DD912154F73A00B5558F /* ZQEpisodeListViewController.swift */; };
 		1543DDAA2154F8A300B5558F /* ZQUIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1543DDA92154F8A300B5558F /* ZQUIViewControllerExtensions.swift */; };
 		1572663B215B738D005C849D /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572663A215B738D005C849D /* SwiftNotice.swift */; };
@@ -92,6 +100,7 @@
 		15C503082150FEA4004FC817 /* ZQSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C503072150FEA4004FC817 /* ZQSettingViewController.swift */; };
 		15C5030B2150FED2004FC817 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C5030A2150FED2004FC817 /* BaseModel.swift */; };
 		15C5030D2151040E004FC817 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C5030C2151040E004FC817 /* BaseNavigationViewController.swift */; };
+		15FC806E215CCAB9001B3B9B /* ZQMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FC806D215CCAB9001B3B9B /* ZQMappable.swift */; };
 		3F5572A9F67AF438987D5482 /* Pods_ZQNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DCFBF84A794971D025C8A7 /* Pods_ZQNews.framework */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +111,14 @@
 		1505E9FC215A322100AE2D39 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		1505E9FF215A407200AE2D39 /* ZQEpisodeListApiTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQEpisodeListApiTarget.swift; sourceTree = "<group>"; };
 		1505EA01215A431F00AE2D39 /* ZQTargetTypeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQTargetTypeExtensions.swift; sourceTree = "<group>"; };
+		15254838215CAE5000CBE457 /* LTSimpleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTSimpleManager.swift; sourceTree = "<group>"; };
+		1525483A215CAE5000CBE457 /* LTDispatchQueueExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTDispatchQueueExtension.swift; sourceTree = "<group>"; };
+		1525483B215CAE5000CBE457 /* LTVCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTVCExtension.swift; sourceTree = "<group>"; };
+		1525483C215CAE5000CBE457 /* LTScrollExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTScrollExtension.swift; sourceTree = "<group>"; };
+		1525483D215CAE5000CBE457 /* LTAdvancedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTAdvancedManager.swift; sourceTree = "<group>"; };
+		1525483E215CAE5000CBE457 /* LTTableViewProtocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTTableViewProtocal.swift; sourceTree = "<group>"; };
+		1525483F215CAE5000CBE457 /* LTPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTPageView.swift; sourceTree = "<group>"; };
+		15254840215CAE5000CBE457 /* LTTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTTableView.swift; sourceTree = "<group>"; };
 		1543DD912154F73A00B5558F /* ZQEpisodeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQEpisodeListViewController.swift; sourceTree = "<group>"; };
 		1543DDA92154F8A300B5558F /* ZQUIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQUIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		1572663A215B738D005C849D /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
@@ -183,6 +200,7 @@
 		15C503072150FEA4004FC817 /* ZQSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQSettingViewController.swift; sourceTree = "<group>"; };
 		15C5030A2150FED2004FC817 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		15C5030C2151040E004FC817 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		15FC806D215CCAB9001B3B9B /* ZQMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQMappable.swift; sourceTree = "<group>"; };
 		5660BEAF912FA16076CC493D /* Pods-ZQNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZQNews/Pods-ZQNews.release.xcconfig"; sourceTree = "<group>"; };
 		9AD71F520DDBF5D66836608B /* Pods-ZQNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZQNews/Pods-ZQNews.debug.xcconfig"; sourceTree = "<group>"; };
 		B9DCFBF84A794971D025C8A7 /* Pods_ZQNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZQNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				1505E9F7215A2B6700AE2D39 /* ZQRefreshTableView.swift */,
+				15FC806D215CCAB9001B3B9B /* ZQMappable.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -238,6 +257,29 @@
 				1505E9FF215A407200AE2D39 /* ZQEpisodeListApiTarget.swift */,
 			);
 			path = Api;
+			sourceTree = "<group>";
+		};
+		15254837215CAE5000CBE457 /* LTPageView */ = {
+			isa = PBXGroup;
+			children = (
+				15254838215CAE5000CBE457 /* LTSimpleManager.swift */,
+				15254839215CAE5000CBE457 /* Extension */,
+				1525483D215CAE5000CBE457 /* LTAdvancedManager.swift */,
+				1525483E215CAE5000CBE457 /* LTTableViewProtocal.swift */,
+				1525483F215CAE5000CBE457 /* LTPageView.swift */,
+				15254840215CAE5000CBE457 /* LTTableView.swift */,
+			);
+			path = LTPageView;
+			sourceTree = "<group>";
+		};
+		15254839215CAE5000CBE457 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1525483A215CAE5000CBE457 /* LTDispatchQueueExtension.swift */,
+				1525483B215CAE5000CBE457 /* LTVCExtension.swift */,
+				1525483C215CAE5000CBE457 /* LTScrollExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		1543DD8D2154F2E800B5558F /* MineModules */ = {
@@ -504,6 +546,7 @@
 		15C3C779214D0115004BBA38 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				15254837215CAE5000CBE457 /* LTPageView */,
 				15726639215B7387005C849D /* SwiftNotice */,
 				15C3C79A214D03A2004BBA38 /* EZSwiftExtensions */,
 			);
@@ -839,11 +882,10 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZQNews/Pods-ZQNews-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/LTScrollView/LTScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -856,11 +898,10 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -899,6 +940,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15254843215CAE5100CBE457 /* LTVCExtension.swift in Sources */,
 				15C3C7DC214D03A3004BBA38 /* ErrorTypeExtensions.swift in Sources */,
 				15C3C7F1214D03A3004BBA38 /* IntExtensions.swift in Sources */,
 				15C3C800214D03A3004BBA38 /* UIFontExtensions.swift in Sources */,
@@ -914,6 +956,7 @@
 				15C3C802214D03A3004BBA38 /* UIEdgeInsets.swift in Sources */,
 				15C3C7E4214D03A3004BBA38 /* DoubleExtensions.swift in Sources */,
 				15C3C7D9214D03A3004BBA38 /* DictionaryExtensions.swift in Sources */,
+				15254841215CAE5100CBE457 /* LTSimpleManager.swift in Sources */,
 				15C3C7E2214D03A3004BBA38 /* BoolExtensions.swift in Sources */,
 				15C3C7D2214D03A3004BBA38 /* ArrayExtensions.swift in Sources */,
 				1543DDAA2154F8A300B5558F /* ZQUIViewControllerExtensions.swift in Sources */,
@@ -931,10 +974,12 @@
 				15C502FC2150F519004FC817 /* ZQHomeViewController.swift in Sources */,
 				15C3C7DB214D03A3004BBA38 /* UIBarButtonItemExtensions.swift in Sources */,
 				15C3C815214D0588004BBA38 /* ZQNotificationMacros.swift in Sources */,
+				15254844215CAE5100CBE457 /* LTScrollExtension.swift in Sources */,
 				15C3C7CF214D03A3004BBA38 /* CGRectExtensions.swift in Sources */,
 				1572663D215B7710005C849D /* ZQEpisodeListModel.swift in Sources */,
 				15C3C7DA214D03A3004BBA38 /* BlockPinch.swift in Sources */,
 				15C3C7FD214D03A3004BBA38 /* UIDeviceExtensions.swift in Sources */,
+				15254845215CAE5100CBE457 /* LTAdvancedManager.swift in Sources */,
 				15C5030B2150FED2004FC817 /* BaseModel.swift in Sources */,
 				15C3C801214D03A3004BBA38 /* UIColorExtensions.swift in Sources */,
 				15C3C7F2214D03A3004BBA38 /* UIWindowExtensions.swift in Sources */,
@@ -942,6 +987,7 @@
 				15C5030D2151040E004FC817 /* BaseNavigationViewController.swift in Sources */,
 				15C3C7EF214D03A3004BBA38 /* FloatingPointExtensions.swift in Sources */,
 				15C3C7D0214D03A3004BBA38 /* CGFloatExtensions.swift in Sources */,
+				15254848215CAE5100CBE457 /* LTTableView.swift in Sources */,
 				15C3C7F4214D03A3004BBA38 /* DateExtensions.swift in Sources */,
 				15C3C7E0214D03A3004BBA38 /* BlockButton.swift in Sources */,
 				15C3C7F5214D03A3004BBA38 /* UILabelExtensions.swift in Sources */,
@@ -954,11 +1000,14 @@
 				15C3C7F9214D03A3004BBA38 /* UserDefaultsExtension.swift in Sources */,
 				15C3C814214D0588004BBA38 /* ZQAPURL.swift in Sources */,
 				1572663F215B773B005C849D /* ZQEpisodeListTableViewCell.swift in Sources */,
+				15254847215CAE5100CBE457 /* LTPageView.swift in Sources */,
 				1505EA00215A407200AE2D39 /* ZQEpisodeListApiTarget.swift in Sources */,
 				15C3C7D3214D03A3004BBA38 /* UITextFieldExtensions.swift in Sources */,
 				15C3C7E6214D03A3004BBA38 /* URLExtensions.swift in Sources */,
 				15C3C7D6214D03A3004BBA38 /* TimerExtensions.swift in Sources */,
+				15254842215CAE5100CBE457 /* LTDispatchQueueExtension.swift in Sources */,
 				15C3C7DE214D03A3004BBA38 /* UIStoryboardExtensions.swift in Sources */,
+				15FC806E215CCAB9001B3B9B /* ZQMappable.swift in Sources */,
 				15C3C7EE214D03A3004BBA38 /* BlockTap.swift in Sources */,
 				1505E9FD215A322100AE2D39 /* BaseViewModel.swift in Sources */,
 				15C3C7F7214D03A3004BBA38 /* UIButtonExtensions.swift in Sources */,
@@ -967,6 +1016,7 @@
 				1572663B215B738D005C849D /* SwiftNotice.swift in Sources */,
 				15C3C7FE214D03A3004BBA38 /* NSAttributedStringExtensions.swift in Sources */,
 				15C3C7D7214D03A3004BBA38 /* BlockSwipe.swift in Sources */,
+				15254846215CAE5100CBE457 /* LTTableViewProtocal.swift in Sources */,
 				15C3C7E7214D03A3004BBA38 /* UIViewControllerExtensions.swift in Sources */,
 				15C3C7F6214D03A3004BBA38 /* UISwitchExtensions.swift in Sources */,
 				15C3C7F8214D03A3004BBA38 /* NSObjectExtensions.swift in Sources */,
@@ -1125,7 +1175,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FP3JZEB9B3;
+				DEVELOPMENT_TEAM = 2RA5LSHPUJ;
 				INFOPLIST_FILE = ZQNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1144,7 +1194,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FP3JZEB9B3;
+				DEVELOPMENT_TEAM = 2RA5LSHPUJ;
 				INFOPLIST_FILE = ZQNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
