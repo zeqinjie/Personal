@@ -10,14 +10,17 @@ import Foundation
 import Moya
 import Result
 import SwiftyJSON
+import HandyJSON
 
 ///成功
-typealias SuccessStringBlock = (_ result: String) -> Void
-typealias SuccessModelBlock = (_ result: ZQMappable?) -> Void
-typealias SuccessArrModelBlock = (_ result: [ZQMappable]?) -> Void
-typealias SuccessJSONBlock = (_ result:JSON) -> Void
+typealias ZQSuccessStringBlock = (_ result: String) -> Void
+typealias ZQSuccessModelBlock = (_ result: HandyJSON?) -> Void
+typealias ZQSuccessArrModelBlock = (_ result:[HandyJSON]?) -> Void
+typealias ZQSuccessJSONBlock = (_ result:JSON) -> Void
+typealias ZQSuccessBlock = (_ result:Any?) -> Void
 /// 失败
-typealias FailBlock = (_ errorMsg: String?) -> Void
+typealias ZQFailBlock = (_ errorMsg: String?) -> Void
+
 
 class ZQNetWorkTool {
     static let shared = ZQNetWorkTool()
@@ -26,9 +29,9 @@ class ZQNetWorkTool {
     
     // MARK: - Public Method
     /// 请求JSON数据
-    func requestDataWithTargetJSON<T:TargetType>(target:T,successClosure:@escaping SuccessJSONBlock,failClosure: @escaping FailBlock) {
+    func requestDataWithTargetJSON<T:TargetType>(target:T,successClosure:@escaping ZQSuccessJSONBlock,failClosure: @escaping ZQFailBlock) {
         let requestProvider = MoyaProvider<T>(requestClosure:requestTimeoutClosure(target: target))
-        let _ = requestProvider.request(target) { (result) -> () in
+        let _ = requestProvider.request(target) {[weak self] (result) -> () in
             switch result{
             case let .success(response):
                 do {
@@ -36,7 +39,7 @@ class ZQNetWorkTool {
                     let json=JSON(mapjson)
                     successClosure(json)
                 } catch {
-                    failClosure(self.failInfo)
+                    failClosure(self?.failInfo)
                 }
             case let .failure(error):
                 failClosure(error.errorDescription)
@@ -44,47 +47,34 @@ class ZQNetWorkTool {
         }
     }
     
-    /// 请求数组对象JSON数据
-//    func requestDataWithTargetArrModelJSON<T:TargetType,M:ZQMappable>(target:T,model:M,successClosure:@escaping SuccessArrModelBlock,failClosure: @escaping FailBlock) {
-//        let requestProvider = MoyaProvider<T>(requestClosure:requestTimeoutClosure(target: target))
-//        let _=requestProvider.request(target) { (result) -> () in
-//            switch result{
-//            case let .success(response):
-//                do {
-//                    let json = try response.mapJSON()
-//                    let jsonString = try JSON(json).string!
-//                    let arr = try?M.mapFromJson(jsonString , M.self)
-//                    successClosure(arr as? [ZQMappable])
-//                } catch {
-//                    failClosure(self.failInfo)
-//                }
-//            case let .failure(error):
-//                failClosure(error.errorDescription)
-//            }
-//        }
-//    }
-    
     /// 请求对象JSON数据
-//    func requestDataWithTargetModelJSON<T:TargetType,M:Mappable>(target:T,model:M,successClosure:@escaping SuccessModelBlock,failClosure: @escaping FailBlock) {
-//        let requestProvider = MoyaProvider<T>(requestClosure:requestTimeoutClosure(target: target))
-//        let _=requestProvider.request(target) { (result) -> () in
-//            switch result{
-//            case let .success(response):
-//                do {
-//                    let json = try response.mapJSON()
-//                    let model = M.mapFromJson
-//                    successClosure(model)
-//                } catch {
-//                    failClosure(self.failInfo)
-//                }
-//            case let .failure(error):
-//                failClosure(error.errorDescription)
-//            }
-//        }
-//    }
+    func requestDataWithTargetModelJSON<T:TargetType,M:HandyJSON>(target:T,model:M.Type,successClosure:@escaping ZQSuccessModelBlock,failClosure: @escaping ZQFailBlock) {
+        self.requestDataWithTargetJSON(target: target, successClosure: { (json) in
+            DLog("json = \(json)")
+            guard let dic = json.dictionaryObject else { return }
+            let model = M.deserialize(from: dic)
+            successClosure(model)
+        }, failClosure: failClosure)
+    }
+    
+    /// 请求数组对象JSON数据
+    func requestDataWithTargetArrModelJSON<T:TargetType,M:HandyJSON>(target:T,model:M.Type,successClosure:@escaping ZQSuccessArrModelBlock,failClosure: @escaping ZQFailBlock) {
+        self.requestDataWithTargetJSON(target: target, successClosure: {[weak self] (json) in
+            DLog("json = \(json)")
+            guard let arr = json.arrayObject else { return }
+            let models = [M].deserialize(from: arr)
+            if let ms = models as? [HandyJSON] {
+                successClosure(ms)
+            }else{
+                failClosure(self?.failInfo)
+            }
+        }, failClosure: failClosure)
+    }
+    
+   
     
     ///请求String数据
-    func requestDataWithTargetString<T:TargetType>(target:T,successClosure:@escaping SuccessStringBlock,failClosure: @escaping FailBlock) {
+    func requestDataWithTargetString<T:TargetType>(target:T,successClosure:@escaping ZQSuccessStringBlock,failClosure: @escaping ZQFailBlock) {
         let requestProvider = MoyaProvider<T>(requestClosure:requestTimeoutClosure(target: target))
         let _=requestProvider.request(target) { (result) -> () in
             switch result{

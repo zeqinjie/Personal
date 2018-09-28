@@ -583,11 +583,11 @@
 		15C3C792214D02CB004BBA38 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				15C3C793214D02E2004BBA38 /* MainModules */,
+				15C3C81E214D2FEA004BBA38 /* HomeModules */,
 				1543DD8F2154F31100B5558F /* SettingModules */,
 				1543DD8E2154F2EF00B5558F /* NewsModules */,
 				1543DD8D2154F2E800B5558F /* MineModules */,
-				15C3C81E214D2FEA004BBA38 /* HomeModules */,
-				15C3C793214D02E2004BBA38 /* MainModules */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";

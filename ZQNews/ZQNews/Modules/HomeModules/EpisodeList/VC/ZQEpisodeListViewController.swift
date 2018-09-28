@@ -11,7 +11,7 @@ import UIKit
 class ZQEpisodeListViewController: BaseViewController {
     
     var viewModel = ZQEpisodeListViewModel()
-    var dataSourece = [ZQEpisodeListModel]()
+    
     var page = 1
     var type = 1
     
@@ -32,9 +32,11 @@ class ZQEpisodeListViewController: BaseViewController {
     
     //MARK: - API
     fileprivate func loadData() {
-        viewModel.getEpisodeData(page: self.page, type: self.type, successBlock: {[unowned self] (json) in
+        viewModel.getEpisodeData(page: self.page, type: self.type, ZQSuccessBlock: {[unowned self] (json) in
             self.hideHud()
-        }, failBlock: { [unowned self] (fail) in
+            guard let model = json as? ZQEpisodeListResultModel else {return}
+            self.dealData(json: model)
+        }, ZQFailBlock: { [unowned self] (fail) in
             self.hideHud()
         })
     }
@@ -49,6 +51,10 @@ class ZQEpisodeListViewController: BaseViewController {
         self.loadData()
     }
     
+    
+    fileprivate func dealData(json:ZQEpisodeListResultModel){
+        
+    }
     
     //MARK: - Public Method
     func refreshHeaderData(tableView:ZQRefreshTableView)  {
@@ -75,11 +81,11 @@ extension ZQEpisodeListViewController{
 extension ZQEpisodeListViewController:UITableViewDelegate, UITableViewDataSource{
     //UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return dataSourece.count
+        return viewModel.dataSourece.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        let model = dataSourece[indexPath.row]
+        let model = viewModel.dataSourece[indexPath.row]
         let cell:ZQEpisodeListTableViewCell = tableView.dequeueReusableCell(withIdentifier: model.cellIdentifier(), for: indexPath) as! ZQEpisodeListTableViewCell
         
         
@@ -88,7 +94,7 @@ extension ZQEpisodeListViewController:UITableViewDelegate, UITableViewDataSource
     
     // UITableViewDelegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
-        let model = dataSourece[indexPath.row]
+        let model = viewModel.dataSourece[indexPath.row]
         return model.cellIdHeigth()
     }
     
