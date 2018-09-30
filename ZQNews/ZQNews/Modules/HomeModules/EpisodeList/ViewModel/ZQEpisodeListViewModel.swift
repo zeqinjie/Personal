@@ -10,7 +10,7 @@ import UIKit
 
 class ZQEpisodeListViewModel: BaseViewModel {
     
-    var dataSourece = [ZQEpisodeListModel]()
+    
     
     // MARK: - API
     

@@ -15,6 +15,7 @@ class ZQEpisodeListViewController: BaseViewController {
     var page = 1
     var type = 1
     
+    var dataSource = [ZQEpisodeListModel]()
     @IBOutlet weak var tableView: ZQRefreshTableView?
     
     //MARK: - LifeCycle
@@ -53,7 +54,12 @@ class ZQEpisodeListViewController: BaseViewController {
     
     
     fileprivate func dealData(json:ZQEpisodeListResultModel){
-        
+        if self.page == 1 {
+            self.dataSource.removeAll()
+        }
+        guard let arr = json.data else {return}
+        self.dataSource += arr
+        self.tableView?.reloadData()
     }
     
     //MARK: - Public Method
@@ -74,6 +80,7 @@ extension ZQEpisodeListViewController{
             self.page += 1
             self.loadData()
         }
+        self.tableView?.register(ZQEpisodeListTableViewCell.self, forCellReuseIdentifier: "ZQEpisodeListTableViewCell")
     }
 }
 
@@ -81,20 +88,20 @@ extension ZQEpisodeListViewController{
 extension ZQEpisodeListViewController:UITableViewDelegate, UITableViewDataSource{
     //UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return viewModel.dataSourece.count
+        return dataSource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        let model = viewModel.dataSourece[indexPath.row]
+        let model = dataSource[indexPath.row]
         let cell:ZQEpisodeListTableViewCell = tableView.dequeueReusableCell(withIdentifier: model.cellIdentifier(), for: indexPath) as! ZQEpisodeListTableViewCell
-        
+        cell.model = model
         
         return cell
     }
     
     // UITableViewDelegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
-        let model = viewModel.dataSourece[indexPath.row]
+        let model = dataSource[indexPath.row]
         return model.cellIdHeigth()
     }
     

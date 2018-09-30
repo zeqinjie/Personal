@@ -7,10 +7,10 @@
 //
 
 import UIKit
-
+import Kingfisher
 class BaseTableViewCell: UITableViewCell {
 
-    var model:BaseModel?
+//    var model:BaseModel?
     
     override func awakeFromNib() {
         super.awakeFromNib()

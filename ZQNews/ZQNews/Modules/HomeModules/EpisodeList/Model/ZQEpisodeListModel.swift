@@ -19,6 +19,8 @@ class ZQEpisodeListModel: BaseModel {
     /*text : 文字  image : 图片   gif : Gif   video: 视频 */
     var type = ""
     var text = ""
+    var created_at = ""
+    var bimageuri = ""
     var username = ""
     var uid = ""
     var header = ""
@@ -38,16 +40,16 @@ class ZQEpisodeListModel: BaseModel {
     var comment = 0
     
     func cellIdentifier() -> String {
-        if type == "text" {
-            return ZQEpisodeListEnumTypeBigImgNews//大圖1
-        }else if type == "image" {
-            return ZQEpisodeListEnumTypeManyImgNews//小圖3
-        }else if type == "gif" {
-            return ZQEpisodeListEnumTypeSmallImgNews //小圖1
-        }else {
-            return ZQEpisodeListEnumTypeSmallImgNews //小圖1
-        }
-        
+//        if type == "text" {
+//            return ZQEpisodeListEnumTypeBigImgNews//大圖1
+//        }else if type == "image" {
+//            return ZQEpisodeListEnumTypeManyImgNews//小圖3
+//        }else if type == "gif" {
+//            return ZQEpisodeListEnumTypeSmallImgNews //小圖1
+//        }else {
+//            return ZQEpisodeListEnumTypeSmallImgNews //小圖1
+//        }
+        return "ZQEpisodeListTableViewCell"
     }
     
     func cellIdHeigth() -> CGFloat {
