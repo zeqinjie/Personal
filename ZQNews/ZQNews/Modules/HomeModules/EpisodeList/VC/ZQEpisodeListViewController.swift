@@ -80,7 +80,7 @@ extension ZQEpisodeListViewController{
             self.page += 1
             self.loadData()
         }
-        self.tableView?.register(ZQEpisodeListTableViewCell.self, forCellReuseIdentifier: "ZQEpisodeListTableViewCell")
+
     }
 }
 
