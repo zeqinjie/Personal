@@ -45,7 +45,7 @@ class ZQHomeViewController: BaseViewController {
     func refreshContentListData(_ tableView: ZQRefreshTableView, _ index: Int){
         if self.listVCS.count > index {
             let vc = self.listVCS[index]
-//            vc.refreshHeaderData(tableView:tableView)
+            vc.refreshHeaderData(tableView:tableView)
         }
         
     }

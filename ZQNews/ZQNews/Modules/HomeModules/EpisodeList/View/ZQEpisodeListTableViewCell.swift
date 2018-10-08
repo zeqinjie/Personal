@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Kingfisher
 class ZQEpisodeListTableViewCell: BaseTableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -25,7 +25,10 @@ class ZQEpisodeListTableViewCell: BaseTableViewCell {
 extension ZQEpisodeListTableViewCell{
     func dealModel() {
         self.titleLabel.text = model?.text ?? ""
-        self.imgView.kf.setImage(with:URL(string: model?.bimageuri ?? ""))
+        let url = URL(string: model?.bimageuri ?? "")
+        if let url = url {
+            self.imgView.kf.setImage(with: ImageResource(downloadURL: url), placeholder: UIImage(named: "test"), options: nil, progressBlock: nil, completionHandler: nil)
+        }
         self.timeLabel.text = model?.created_at ?? ""
     }
 }

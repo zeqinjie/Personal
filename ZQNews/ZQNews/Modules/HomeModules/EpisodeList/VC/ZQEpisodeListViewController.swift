@@ -11,7 +11,7 @@ import UIKit
 class ZQEpisodeListViewController: BaseViewController {
     
     var viewModel = ZQEpisodeListViewModel()
-    
+    weak var listTableView:ZQRefreshTableView?
     var page = 1
     var type = 1
     
@@ -24,7 +24,7 @@ class ZQEpisodeListViewController: BaseViewController {
         creatUI()
         // Do any additional setup after loading the view.
         showHud()
-        loadFirstData()
+        loadFirstPageData(true)
     }
 
     
@@ -33,11 +33,13 @@ class ZQEpisodeListViewController: BaseViewController {
     
     //MARK: - API
     fileprivate func loadData() {
-        viewModel.getEpisodeData(page: self.page, type: self.type, ZQSuccessBlock: {[unowned self] (json) in
+        viewModel.getEpisodeData(page: self.page, type: self.type, successBlock: {[unowned self] (json) in
             self.hideHud()
+            self.endRefresh()
             guard let model = json as? ZQEpisodeListResultModel else {return}
             self.dealData(json: model)
-        }, ZQFailBlock: { [unowned self] (fail) in
+        }, failBlock: { [unowned self] (fail) in
+            self.endRefresh()
             self.hideHud()
         })
     }
@@ -47,8 +49,11 @@ class ZQEpisodeListViewController: BaseViewController {
     //MARK: - Override Method
     
     //MARK: - Private Method
-    fileprivate func loadFirstData()  {
+    func loadFirstPageData(_ showHud:Bool) {
         self.page = 1
+        if showHud {
+            self.showHud()
+        }
         self.loadData()
     }
     
@@ -62,19 +67,31 @@ class ZQEpisodeListViewController: BaseViewController {
         self.tableView?.reloadData()
     }
     
+    func endRefresh(){
+        self.tableView?.endRefreshing()
+        self.listTableView?.endRefreshing()
+    }
+    
     //MARK: - Public Method
     func refreshHeaderData(tableView:ZQRefreshTableView)  {
-        
+        DLog("refreshHeaderData")
+        self.listTableView = tableView
+        self.loadFirstPageData(false)
     }
-    //MARK: - KVO
-    
-    //MARK: - NSNotifaction
+
 
 }
 
 // MARK: - UI
 extension ZQEpisodeListViewController{
     @objc func creatUI()  {
+        creatTableView()
+    }
+    
+    private func creatTableView() {
+        self.glt_scrollView = self.tableView
+        self.tableView?.tableFooterView = UIView()
+        self.setAutomaticallyAdjustsScrollView(self.tableView)
         self.tableView?.loadMoreBlock = {
             (tableView) in
             self.page += 1
