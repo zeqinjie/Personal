@@ -12,7 +12,6 @@
 		1505E9FA215A320A00AE2D39 /* ZQEpisodeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505E9F9215A320A00AE2D39 /* ZQEpisodeListViewModel.swift */; };
 		1505E9FD215A322100AE2D39 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505E9FC215A322100AE2D39 /* BaseViewModel.swift */; };
 		1505EA00215A407200AE2D39 /* ZQEpisodeListApiTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505E9FF215A407200AE2D39 /* ZQEpisodeListApiTarget.swift */; };
-		1505EA02215A431F00AE2D39 /* ZQTargetTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505EA01215A431F00AE2D39 /* ZQTargetTypeExtensions.swift */; };
 		150AF93B215CE58600321E31 /* UIViewControllerShowHudEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150AF93A215CE58600321E31 /* UIViewControllerShowHudEx.swift */; };
 		15254841215CAE5100CBE457 /* LTSimpleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15254838215CAE5000CBE457 /* LTSimpleManager.swift */; };
 		15254842215CAE5100CBE457 /* LTDispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1525483A215CAE5000CBE457 /* LTDispatchQueueExtension.swift */; };
@@ -101,6 +100,7 @@
 		15C503082150FEA4004FC817 /* ZQSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C503072150FEA4004FC817 /* ZQSettingViewController.swift */; };
 		15C5030B2150FED2004FC817 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C5030A2150FED2004FC817 /* BaseModel.swift */; };
 		15C5030D2151040E004FC817 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C5030C2151040E004FC817 /* BaseNavigationViewController.swift */; };
+		15E9F2FF216CA0700016A1AC /* ZQTargetTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E9F2FE216CA0700016A1AC /* ZQTargetTypeExtensions.swift */; };
 		15FC806E215CCAB9001B3B9B /* ZQMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FC806D215CCAB9001B3B9B /* ZQMappable.swift */; };
 		3F5572A9F67AF438987D5482 /* Pods_ZQNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DCFBF84A794971D025C8A7 /* Pods_ZQNews.framework */; };
 /* End PBXBuildFile section */
@@ -111,7 +111,6 @@
 		1505E9F9215A320A00AE2D39 /* ZQEpisodeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQEpisodeListViewModel.swift; sourceTree = "<group>"; };
 		1505E9FC215A322100AE2D39 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		1505E9FF215A407200AE2D39 /* ZQEpisodeListApiTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQEpisodeListApiTarget.swift; sourceTree = "<group>"; };
-		1505EA01215A431F00AE2D39 /* ZQTargetTypeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQTargetTypeExtensions.swift; sourceTree = "<group>"; };
 		150AF93A215CE58600321E31 /* UIViewControllerShowHudEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerShowHudEx.swift; sourceTree = "<group>"; };
 		15254838215CAE5000CBE457 /* LTSimpleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTSimpleManager.swift; sourceTree = "<group>"; };
 		1525483A215CAE5000CBE457 /* LTDispatchQueueExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTDispatchQueueExtension.swift; sourceTree = "<group>"; };
@@ -202,6 +201,7 @@
 		15C503072150FEA4004FC817 /* ZQSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQSettingViewController.swift; sourceTree = "<group>"; };
 		15C5030A2150FED2004FC817 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		15C5030C2151040E004FC817 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		15E9F2FE216CA0700016A1AC /* ZQTargetTypeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZQTargetTypeExtensions.swift; sourceTree = "<group>"; };
 		15FC806D215CCAB9001B3B9B /* ZQMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQMappable.swift; sourceTree = "<group>"; };
 		5660BEAF912FA16076CC493D /* Pods-ZQNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZQNews/Pods-ZQNews.release.xcconfig"; sourceTree = "<group>"; };
 		9AD71F520DDBF5D66836608B /* Pods-ZQNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZQNews/Pods-ZQNews.debug.xcconfig"; sourceTree = "<group>"; };
@@ -784,7 +784,7 @@
 			isa = PBXGroup;
 			children = (
 				15A63AD72153AAF300282232 /* ZQNetWorkTool.swift */,
-				1505EA01215A431F00AE2D39 /* ZQTargetTypeExtensions.swift */,
+				15E9F2FE216CA0700016A1AC /* ZQTargetTypeExtensions.swift */,
 			);
 			path = ZQNetWorkTool;
 			sourceTree = "<group>";
@@ -961,6 +961,7 @@
 				15C3C7D9214D03A3004BBA38 /* DictionaryExtensions.swift in Sources */,
 				150AF93B215CE58600321E31 /* UIViewControllerShowHudEx.swift in Sources */,
 				15254841215CAE5100CBE457 /* LTSimpleManager.swift in Sources */,
+				15E9F2FF216CA0700016A1AC /* ZQTargetTypeExtensions.swift in Sources */,
 				15C3C7E2214D03A3004BBA38 /* BoolExtensions.swift in Sources */,
 				15C3C7D2214D03A3004BBA38 /* ArrayExtensions.swift in Sources */,
 				1543DDAA2154F8A300B5558F /* UIViewControllerHideNavigationBarEx.swift in Sources */,
@@ -996,7 +997,6 @@
 				15C3C7E0214D03A3004BBA38 /* BlockButton.swift in Sources */,
 				15C3C7F5214D03A3004BBA38 /* UILabelExtensions.swift in Sources */,
 				15C3C7E3214D03A3004BBA38 /* EZSwiftFunctions.swift in Sources */,
-				1505EA02215A431F00AE2D39 /* ZQTargetTypeExtensions.swift in Sources */,
 				15C3C816214D0588004BBA38 /* ZQUserDefaultMacros.swift in Sources */,
 				15726642215B7757005C849D /* BaseTableViewCell.swift in Sources */,
 				1505E9FA215A320A00AE2D39 /* ZQEpisodeListViewModel.swift in Sources */,
