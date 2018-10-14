@@ -15,6 +15,7 @@ target 'Photoshop' do
 #  pod 'RAMAnimatedTabBarController' , ' 3.5.0'
   pod 'ESPullToRefresh'
   pod 'KeychainAccess'
-#  pod 'YPImagePicker' 
+#  pod 'YPImagePicker'
+  pod 'CropViewController'
   pod 'HandyJSON'   #,' 4.1.1'
 end

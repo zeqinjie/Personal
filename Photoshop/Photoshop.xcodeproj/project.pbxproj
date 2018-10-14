@@ -88,6 +88,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1510491221737F0500FE887E /* Photoshop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Photoshop-Bridging-Header.h"; sourceTree = "<group>"; };
 		1560AC25216C9040003145BA /* ZQHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZQHomeViewController.swift; sourceTree = "<group>"; };
 		1560AC38216C9040003145BA /* ZQMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZQMineViewController.swift; sourceTree = "<group>"; };
 		1560AD0F216C9143003145BA /* GlobalObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalObject.swift; sourceTree = "<group>"; };
@@ -184,6 +185,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1510490D21737E7A00FE887E /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				1510491221737F0500FE887E /* Photoshop-Bridging-Header.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		1560AC17216C9040003145BA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,6 +352,7 @@
 				15E9F30F216CA2120016A1AC /* Extenstion */,
 				15E9F315216CA2420016A1AC /* Tool */,
 				1560AD11216C91D2003145BA /* Storyboard */,
+				1510490D21737E7A00FE887E /* Header */,
 				15C76EFE216C7C6F00120F25 /* AppDelegate.swift */,
 				15C76F05216C7C7000120F25 /* Assets.xcassets */,
 				15C76F07216C7C7000120F25 /* LaunchScreen.storyboard */,
@@ -596,6 +606,24 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				ar,
+				"zh-Hans",
+				ja,
+				es,
+				da,
+				it,
+				ms,
+				ko,
+				"zh-Hant",
+				tr,
+				pl,
+				vi,
+				ru,
+				fr,
+				id,
+				nl,
+				pt,
 			);
 			mainGroup = 15C76EF2216C7C6F00120F25;
 			productRefGroup = 15C76EFC216C7C6F00120F25 /* Products */;
@@ -647,6 +675,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Photoshop/Pods-Photoshop-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CropViewController/CropViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
@@ -662,6 +691,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CropViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
@@ -906,6 +936,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.Photoshop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Photoshop/Header/Photoshop-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -926,6 +957,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.Photoshop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Photoshop/Header/Photoshop-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
