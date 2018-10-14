@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FSS-uG-bdv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FSS-uG-bdv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,24 +13,54 @@
         <!--Home View Controller-->
         <scene sceneID="WKu-NL-RUd">
             <objects>
-                <viewController id="zWc-Vm-fGO" customClass="ZQHomeViewController" sceneMemberID="viewController">
+                <viewController id="zWc-Vm-fGO" customClass="ZQHomeViewController" customModule="Photoshop" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="spI-oi-uYI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fengjing" translatesAutoresizingMaskIntoConstraints="NO" id="fBo-Qr-aLf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHB-I6-QLi">
+                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.33725490196078434" green="0.2196078431372549" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3nT-3d-cfI"/>
+                                    <constraint firstAttribute="height" constant="100" id="ZQt-Vj-ar5"/>
+                                </constraints>
+                                <state key="normal" image="add"/>
+                                <connections>
+                                    <action selector="chooseAction:" destination="zWc-Vm-fGO" eventType="touchUpInside" id="0xE-tC-z7L"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zHB-I6-QLi" firstAttribute="centerX" secondItem="spI-oi-uYI" secondAttribute="centerX" id="5pJ-wl-V5x"/>
+                            <constraint firstItem="fBo-Qr-aLf" firstAttribute="leading" secondItem="Q4I-LQ-gX6" secondAttribute="leading" id="8MR-Uu-yYN"/>
+                            <constraint firstItem="zHB-I6-QLi" firstAttribute="centerY" secondItem="spI-oi-uYI" secondAttribute="centerY" id="cv0-PU-hdO"/>
+                            <constraint firstItem="fBo-Qr-aLf" firstAttribute="trailing" secondItem="Q4I-LQ-gX6" secondAttribute="trailing" id="iYW-BG-sHj"/>
+                            <constraint firstItem="fBo-Qr-aLf" firstAttribute="top" secondItem="spI-oi-uYI" secondAttribute="top" id="mtL-8e-YDl"/>
+                            <constraint firstItem="fBo-Qr-aLf" firstAttribute="bottom" secondItem="Q4I-LQ-gX6" secondAttribute="bottom" id="n3W-JG-crt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Q4I-LQ-gX6"/>
                     </view>
                     <navigationItem key="navigationItem" id="qBy-2T-xSE"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="chooseBtn" destination="zHB-I6-QLi" id="TlB-fi-VP1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GTv-Pp-4VU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="9"/>
+            <point key="canvasLocation" x="52" y="8.5457271364317844"/>
         </scene>
         <!--Base Navigation View Controller-->
         <scene sceneID="9b7-UL-YQd">
             <objects>
                 <navigationController storyboardIdentifier="HomeBaseNav" id="FSS-uG-bdv" customClass="BaseNavigationViewController" customModule="Photoshop" customModuleProvider="target" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="15m-ba-ZfS">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -44,4 +74,8 @@
             <point key="canvasLocation" x="-722" y="9"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add" width="25" height="25"/>
+        <image name="fengjing" width="3200" height="1200"/>
+    </resources>
 </document>

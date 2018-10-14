@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (4.7.3)
   - ESPullToRefresh (2.7)
-  - HandyJSON (4.1.1)
+  - HandyJSON (4.2.0)
   - KeychainAccess (3.1.2)
   - Kingfisher (4.9.0)
   - Moya (11.0.2):
@@ -9,7 +9,6 @@ PODS:
   - Moya/Core (11.0.2):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
-  - RAMAnimatedTabBarController (3.5.0)
   - Result (3.2.4)
   - RxCocoa (4.3.1):
     - RxSwift (~> 4.0)
@@ -20,11 +19,10 @@ PODS:
 
 DEPENDENCIES:
   - ESPullToRefresh
-  - HandyJSON (= 4.1.1)
+  - HandyJSON
   - KeychainAccess
   - Kingfisher (= 4.9.0)
   - Moya (~> 11.0)
-  - RAMAnimatedTabBarController (= 3.5.0)
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
   - SnapKit (~> 4.0.0)
@@ -39,7 +37,6 @@ SPEC REPOS:
     - KeychainAccess
     - Kingfisher
     - Moya
-    - RAMAnimatedTabBarController
     - Result
     - RxCocoa
     - RxSwift
@@ -50,11 +47,10 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   ESPullToRefresh: 119e2710b82b75536aab2bbe4883ba119fca35c8
-  HandyJSON: 3a3de917c4118767ffe41c29b5acba23409649f4
+  HandyJSON: 9dfc026c7d7adc1f0f8ba8b181495f0e0763b0f4
   KeychainAccess: b3816fddcf28aa29d94b10ec305cd52be14c472b
   Kingfisher: 64539b51826b778206daa6ed815d12653caa69dd
   Moya: a725035953bc1c0eb1be505ab903984501d82440
-  RAMAnimatedTabBarController: 7e259e89b669c7bc833a6441c7d8fbfd6580f473
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
@@ -62,6 +58,6 @@ SPEC CHECKSUMS:
   Spring: 17901566c8ecf3a1327902b940406c64512f9bb1
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 1ac3e8af5e9a224822bbf988631002cbadf4afdd
+PODFILE CHECKSUM: 4bce8d1680d054223e25d4e90306be9bd4ebd266
 
 COCOAPODS: 1.5.3

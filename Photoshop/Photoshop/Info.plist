@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>PS for iPhone</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -41,5 +43,21 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>App需要您的同意,才能訪問相機</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>App需要您的同意,才能訪問麥克風</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>App需要您的同意,才能訪問相冊</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>App需要您的同意,才能訪問相冊</string>
+<!--    <key>NSContactsUsageDescription</key>-->
+<!--    <string>App需要您的同意,才能訪問通訊錄</string>-->
+<!--    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>-->
+<!--    <string>為方便用戶查找周邊房屋信息，可根據定位來快速找房。</string>-->
+<!--    <key>NSLocationAlwaysUsageDescription</key>-->
+<!--    <string>為方便用戶查找周邊房屋信息，可根據定位來快速找房。</string>-->
+<!--    <key>NSLocationWhenInUseUsageDescription</key>-->
+<!--    <string>為方便用戶查找周邊房屋信息，可根據定位來快速找房。</string>-->
 </dict>
 </plist>

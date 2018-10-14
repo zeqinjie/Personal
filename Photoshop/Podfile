@@ -12,8 +12,9 @@ target 'Photoshop' do
   pod 'Kingfisher', '4.9.0'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'Spring'
-  pod 'RAMAnimatedTabBarController' , ' 3.5.0'
+#  pod 'RAMAnimatedTabBarController' , ' 3.5.0'
   pod 'ESPullToRefresh'
   pod 'KeychainAccess'
-  pod 'HandyJSON', ' 4.1.1'
+#  pod 'YPImagePicker' 
+  pod 'HandyJSON'   #,' 4.1.1'
 end
