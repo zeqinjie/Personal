@@ -10,8 +10,9 @@ import UIKit
 import CropViewController
 class ZQHomeViewController: BaseViewController, CropViewControllerDelegate, UINavigationControllerDelegate,UIImagePickerControllerDelegate {
 
+    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var chooseBtn: UIButton!
-    fileprivate let imageView = UIImageView()
     fileprivate var image: UIImage?
     fileprivate var croppingStyle = CropViewCroppingStyle.default
     
@@ -27,6 +28,7 @@ class ZQHomeViewController: BaseViewController, CropViewControllerDelegate, UINa
     override func defaultSet() {
         super.defaultSet()
         self.isHideNavigationBar = true
+        self.automaticallyAdjustsScrollViewInsets = false
     }
     
     // MARK: - Action
@@ -68,35 +70,13 @@ extension ZQHomeViewController {
         self.chooseBtn.layer.borderColor = ZQColor_563885?.cgColor
         self.chooseBtn.layer.cornerRadius = 0.5 * self.chooseBtn.frame.width
         self.chooseBtn.layer.borderWidth = 8
-        
-        view.addSubview(imageView)
     }
     
     public func layoutImageView() {
-        guard imageView.image != nil else { return }
-        
-        let padding: CGFloat = 20.0
-        
-        var viewFrame = self.view.bounds
-        viewFrame.size.width -= (padding * 2.0)
-        viewFrame.size.height -= ((padding * 2.0))
-        
-        var imageFrame = CGRect.zero
-        imageFrame.size = imageView.image!.size;
-        
-        if imageView.image!.size.width > viewFrame.size.width || imageView.image!.size.height > viewFrame.size.height {
-            let scale = min(viewFrame.size.width / imageFrame.size.width, viewFrame.size.height / imageFrame.size.height)
-            imageFrame.size.width *= scale
-            imageFrame.size.height *= scale
-            imageFrame.origin.x = (self.view.bounds.size.width - imageFrame.size.width) * 0.5
-            imageFrame.origin.y = (self.view.bounds.size.height - imageFrame.size.height) * 0.5
-            imageView.frame = imageFrame
-        }
-        else {
-            self.imageView.frame = imageFrame;
-            self.imageView.center = CGPoint(x: self.view.bounds.midX, y: self.view.bounds.midY)
-        }
+        ZQTool.layoutImageView(imageView: self.imageView, contentView: self.contentView, padding: 5)
     }
+    
+    
 }
 
 extension ZQHomeViewController {

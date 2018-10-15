@@ -56,4 +56,29 @@ class ZQTool: NSObject {
         }
         
     }
+    
+    
+    class func layoutImageView(imageView:UIImageView,contentView:UIView,padding:CGFloat) {
+        guard imageView.image != nil else { return }
+        var viewFrame = contentView.frame
+        viewFrame.size.width -= (padding * 2.0)
+        viewFrame.size.height -= ((padding * 2.0))
+        
+        var imageFrame = CGRect.zero
+        imageFrame.size = imageView.image!.size;
+        
+        if imageView.image!.size.width > viewFrame.size.width
+            || imageView.image!.size.height > viewFrame.size.height {
+            let scale = min(viewFrame.size.width / imageFrame.size.width, viewFrame.size.height / imageFrame.size.height)
+            imageFrame.size.width *= scale
+            imageFrame.size.height *= scale
+            imageFrame.origin.x = (contentView.frame.size.width - imageFrame.size.width) * 0.5
+            imageFrame.origin.y = (contentView.frame.size.height - imageFrame.size.height) * 0.5
+            imageView.frame = imageFrame
+        }
+        else {
+            imageView.frame = imageFrame;
+            imageView.center = CGPoint(x: contentView.frame.midX, y: contentView.frame.midY)
+        }
+    }
 }
